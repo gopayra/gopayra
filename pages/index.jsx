@@ -9,7 +9,7 @@ import AppleAppStoreIcon from '../assets/images/icons/appleAppStoreIcon.svg';
 import GooglePlayIcon from '../assets/images/icons/appleAppStoreIcon.svg';
 // social icons import 
 import Facebook from '../assets/images/icons/facebook.svg';
-import LinkedIn from '../assets/images/icons/linkedIn.svg';
+import LinkedIn from '../assets/images/icons/linkedin.svg';
 import Twitter from '../assets/images/icons/twitter.svg';
 import Instagram from '../assets/images/icons/instagram.svg';
 import Link from 'next/link';
