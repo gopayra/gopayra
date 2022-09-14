@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Container from './Container';
@@ -37,7 +36,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <Image src={Logo} alt="brand-logo"></Image>
+              <img src={Logo} alt="brand-logo"></img>
             </Link>
           </div>
           {/* Nav items */}
@@ -45,7 +44,7 @@ const Navbar = () => {
             {navItem.map((item, index) => <NavItem item={item} key={index} />)}
           </ul>
           <div className='md:hidden block transition-all hover:scale-90 active:scale-105 cursor-pointer'>
-            <Image src={Hamburger} alt="" onClick={() => setMobileNav(true)} />
+            <img src={Hamburger} alt="" onClick={() => setMobileNav(true)} />
           </div>
         </div>
 
@@ -54,7 +53,7 @@ const Navbar = () => {
           <div className='bg-white md:hidden flex flex-col justify-between h-screen w-full absolute text-right font-bold top-0 left-0 right-0 p-5' data-aos="fade-left">
             <div>
               <div className='transition-all hover:scale-90 active:rotate-90 cursor-pointer origin-center inline-block'>
-                <Image src={Cross} alt="" onClick={() => setMobileNav(false)} />
+                <img src={Cross} alt="" onClick={() => setMobileNav(false)} />
               </div>
               <ul className='text-3xl text-[#34C47E]'>
                 {navItem.map((item, index) => <NavItem item={item} key={index} />)}

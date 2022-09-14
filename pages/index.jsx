@@ -13,7 +13,6 @@ import LinkedIn from '../assets/images/icons/linkedin.svg';
 import Twitter from '../assets/images/icons/twitter.svg';
 import Instagram from '../assets/images/icons/instagram.svg';
 import Link from 'next/link';
-import Image from 'next/image';
 import Button from '../components/common/Button';
 
 export default function Home() {
@@ -53,7 +52,7 @@ export default function Home() {
             </div>
 
             <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <Image src={ShowCase1} alt="" />
+              <img src={ShowCase1} alt="" />
             </div>
           </section>
 
@@ -62,7 +61,7 @@ export default function Home() {
             <div className='bg-gopayra absolute h-[100px]'></div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-right">
-                <Image src={ShowCase2} alt="" />
+                <img src={ShowCase2} alt="" />
               </div>
 
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-left">
@@ -89,7 +88,7 @@ export default function Home() {
             </div>
 
             <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <Image src={ShowCase2} alt="" />
+              <img src={ShowCase2} alt="" />
             </div>
           </section>
         </Container>
@@ -99,13 +98,13 @@ export default function Home() {
         <Container>
           <div className='flex justify-between mb-8'>
             <div className='cursor-pointer transition-all hover:scale-110'>
-              <Image src={Logo} alt="" />
+              <img src={Logo} alt="" />
             </div>
             <div className='flex gap-4'>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Facebook} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={LinkedIn} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Twitter} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Instagram} alt="" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Facebook} alt="" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={LinkedIn} alt="" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Twitter} alt="" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Instagram} alt="" /></Link></div>
             </div>
           </div>
 
