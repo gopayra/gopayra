@@ -4,7 +4,20 @@ const nextConfig = {
   swcMinify: true,
 }
 
+module.exports = nextConfig
+
 module.exports = {
-  eslint: { ignoreDuringBuilds: true },
-  nextConfig,
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+    }
+  },
+  images: {
+    loader: 'akamai',
+    path: '/',
+  },
 }

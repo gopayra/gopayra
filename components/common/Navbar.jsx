@@ -7,6 +7,7 @@ import Hamburger from '../../assets/images/icons/hamburger.svg';
 import Cross from '../../assets/images/icons/cross.svg';
 import AppleAppStoreIcon from '../../assets/images/icons/appleAppStoreIcon.svg';
 import GooglePlayIcon from '../../assets/images/icons/googlePlayIcon.svg';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [MobileNav, setMobileNav] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <img src={Logo} alt="brand-logo"></img>
+              <Image src={Logo} alt="brand-logo"></Image>
             </Link>
           </div>
           {/* Nav items */}
@@ -44,7 +45,7 @@ const Navbar = () => {
             {navItem.map((item, index) => <NavItem item={item} key={index} />)}
           </ul>
           <div className='md:hidden block transition-all hover:scale-90 active:scale-105 cursor-pointer'>
-            <img src={Hamburger} alt="" onClick={() => setMobileNav(true)} />
+            <Image src={Hamburger} alt="" onClick={() => setMobileNav(true)} />
           </div>
         </div>
 
@@ -53,7 +54,7 @@ const Navbar = () => {
           <div className='bg-white md:hidden flex flex-col justify-between h-screen w-full absolute text-right font-bold top-0 left-0 right-0 p-5' data-aos="fade-left">
             <div>
               <div className='transition-all hover:scale-90 active:rotate-90 cursor-pointer origin-center inline-block'>
-                <img src={Cross} alt="" onClick={() => setMobileNav(false)} />
+                <Image src={Cross} alt="" onClick={() => setMobileNav(false)} />
               </div>
               <ul className='text-3xl text-[#34C47E]'>
                 {navItem.map((item, index) => <NavItem item={item} key={index} />)}

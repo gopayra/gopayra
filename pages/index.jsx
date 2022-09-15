@@ -53,7 +53,7 @@ export default function Home() {
             </div>
 
             <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <img src={ShowCase1} alt="" />
+              <Image src={ShowCase1} alt="" />
             </div>
           </section>
 
@@ -62,7 +62,7 @@ export default function Home() {
             <div className='bg-gopayra absolute h-[100px]'></div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-10'>
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-right">
-                <img src={ShowCase2} alt="" />
+                <Image src={ShowCase2} alt="" />
               </div>
 
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-left">
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <img src={ShowCase2} alt="" />
+              <Image src={ShowCase2} alt="" />
             </div>
           </section>
         </Container>
@@ -99,12 +99,12 @@ export default function Home() {
         <Container>
           <div className='flex justify-between mb-8'>
             <div className='cursor-pointer transition-all hover:scale-110'>
-              <img src={Logo} alt="" />
+              <Image src={Logo} alt="" />
             </div>
             <div className='flex gap-4'>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Facebook} alt="facebook" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={LinkedIn} alt="linkedin" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Twitter} alt="twitter" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Facebook} alt="facebook" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={LinkedIn} alt="linkedin" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Twitter} alt="twitter" /></Link></div>
               <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Instagram} alt="instagram" /></Link></div>
             </div>
           </div>
