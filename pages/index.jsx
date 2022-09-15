@@ -14,6 +14,7 @@ import Twitter from '../assets/images/icons/twitter.svg';
 import Instagram from '../assets/images/icons/instagram.svg';
 import Link from 'next/link';
 import Button from '../components/common/Button';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -101,10 +102,10 @@ export default function Home() {
               <img src={Logo} alt="" />
             </div>
             <div className='flex gap-4'>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Facebook} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={LinkedIn} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Twitter} alt="" /></Link></div>
-              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Instagram} alt="" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Facebook} alt="facebook" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={LinkedIn} alt="linkedin" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><img src={Twitter} alt="twitter" /></Link></div>
+              <div className='cursor-pointer transition-all hover:scale-110'><Link href="/facebook"><Image src={Instagram} alt="instagram" /></Link></div>
             </div>
           </div>
 
