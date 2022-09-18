@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Container from './Container';
 import Button from './Button';
-import Logo from "../../assets/images/navlogo.png";
+import Logo from "../../assets/images/logos/lite-logo.png";
 import Hamburger from '../../assets/images/icons/hamburger.svg';
 import Cross from '../../assets/images/icons/cross.svg';
 import AppleAppStoreIcon from '../../assets/images/icons/appleAppStoreIcon.svg';
@@ -31,13 +31,13 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav className='gopayra-bg fixed w-full z-10'>
+    <nav className='bg-gopayra fixed w-full z-10'>
       <Container>
         {/* Brand Logo */}
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <Image src={Logo} alt="brand-logo"></Image>
+              <Image src={Logo} alt="brand-logo" height={40} width={40}></Image>
             </Link>
           </div>
           {/* Nav items */}
