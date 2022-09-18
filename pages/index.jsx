@@ -8,6 +8,7 @@ import AppleAppStoreIcon from '../assets/images/icons/appleAppStoreIcon.svg';
 import GooglePlayIcon from '../assets/images/icons/googlePlayIcon.svg';
 import goPayraBanner from '../assets/images/gopayrabanner.png'
 import DowloadOurApp from '../assets/images/downloadourapp.png';
+import Rider from '../assets/images/rider.svg'
 
 import Link from 'next/link';
 import Button from '../components/common/Button';
@@ -29,12 +30,11 @@ export default function Home() {
       <main>
 
         {/* hero section */}
-        <section className='hero-bg bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
+        <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
-            <div className='flex justify-center items-center h-full'>
-              <div className='text-center mx-auto'>
-                <h1 className='max-w-[1076px] text-3xl md:text-6xl font-bold text-gopayra' >This is the first Go Pyara to bring real time
-                  trekking facility to Bangladesh.</h1>
+            <div className='flex justify-center items-center h-full mt-6'>
+              <div className='text-center'>
+                <h1 className='max-w-[1076px] text-3xl md:text-5xl font-bold text-gopayra' >This Is The First Go Payra To Bring Real Time Trekking Facility To Bangladesh.</h1>
                 <p className='font-medium mt-4 md:mt-8 text-slate-400 text-sm md:text-base'>The days of cheating with time and trekking are over.You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
                 <div className='flex justify-center mt-8'>
                   <Link href="#download">
@@ -44,29 +44,38 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
+
+              <div className='h-full w-full hidden md:flex'>
+                <Image src={Rider} alt="" />
+              </div>
+            </div>
+          </Container>
+        </section>
+
+
+        {/* showcase section 1 */}
+        <section className='py-10 md:py-32 bg-green-400'>
+          <Container>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+              <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
+                <div className='p-6'>
+                  <p className='text-2xl font-bold mb-4 text-black'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
+                  <Link href="#download">
+                    <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-gopayra hover:bg-white active:scale-105'>
+                      Download Our App
+                    </button>
+                  </Link>
+                </div>
+              </div>
+
+              <div className='w-full flex items-center justify-center gap-4 border-8 border-[#218578] rounded-lg' data-aos="fade-left">
+                <Image src={ShowCase1} alt="" />
+              </div>
             </div>
           </Container>
         </section>
 
         <Container>
-          {/* showcase section 1 */}
-          <section className='grid grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-32'>
-            <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
-              <div className='p-6'>
-                <p className='text-2xl font-bold mb-4 text-black'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
-                <Link href="#download">
-                  <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-gopayra hover:bg-white active:scale-105'>
-                    Download Our App
-                  </button>
-                </Link>
-              </div>
-            </div>
-
-            <div className='w-full flex items-center justify-center gap-4 border-8 border-[#218578] rounded-lg' data-aos="fade-left">
-              <Image src={ShowCase1} alt="" />
-            </div>
-          </section>
-
           {/* showcase section 2 */}
           <section className='relative my-10 md:my-32 border-4 border-[#218578] rounded-lg p-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
