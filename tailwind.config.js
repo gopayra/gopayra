@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gopayra: "#00BF64",
+        gopayra: "#31B78A",
+        gopayraDark: "#208578",
       },
     },
   },
