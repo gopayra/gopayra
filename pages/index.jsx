@@ -86,11 +86,13 @@ export default function Home() {
               <div className='w-full flex items-center justify-center gap-6 bg-[#218578] p-4 rounded-lg' data-aos="fade-left">
                 <div className='p-6'>
                   <p className='text-2xl font-bold mb-4 text-center'>The value of each product, small to large, sent by your parcel maker is important to us at GoPayra</p>
-                  <Link href="#download">
-                    <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
-                      Download Our App
-                    </button>
-                  </Link>
+                  <div className='flex justify-center'>
+                    <Link href="#download">
+                      <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
+                        Download Our App
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
