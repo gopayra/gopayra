@@ -78,7 +78,7 @@ const Navbar = () => {
 
 export const NavItem = ({ item }) => {
   return (
-    <li className='transition-all hover:text-emerald-900 hover:scale-110 active:text-emerald-400 active:scale-105 md:mt-0 mt-10'>
+    <li className='transition-all hover:text-emerald-300 hover:scale-110 active:text-emerald-200 active:scale-105 md:mt-0 mt-10'>
       <Link href={item.link}>{item.text}</Link>
     </li>
   )

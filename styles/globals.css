@@ -19,16 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
-
 .gopayra-bg {
   background: linear-gradient(90deg, rgba(49,182,139,1) 0%, rgba(52,196,126,1) 100%);
 }

@@ -35,10 +35,10 @@ export default function Home() {
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
               <div className='text-center'>
                 <h1 className='max-w-[1076px] text-3xl md:text-4xl font-bold text-gopayra' >This Is The First Go Payra To Bring Real Time Trekking Facility To Bangladesh.</h1>
-                <p className='font-medium mt-4 text-slate-400 text-sm md:text-base'>The days of cheating with time and trekking are over.You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
+                <p className='font-medium mt-4 text-slate-600 text-sm md:text-base'>The days of cheating with time and trekking are over.You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
                 <div className='flex justify-center mt-8'>
                   <Link href="#download">
-                    <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:bg-gopayraDark active:scale-105'>
+                    <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:bg-gopayraLight active:scale-105'>
                       Download Our App
                     </button>
                   </Link>
@@ -59,16 +59,16 @@ export default function Home() {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
                 <div className='p-6'>
-                  <p className='text-2xl font-bold mb-4 text-black'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
+                  <p className='text-2xl font-bold mb-4 text-white text-justify'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
                   <Link href="#download">
-                    <button className='bg-white text-gopayraDark flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraDark active:scale-105'>
+                    <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
                       Download Our App
                     </button>
                   </Link>
                 </div>
               </div>
 
-              <div className='w-full flex items-center justify-center gap-4 border-8 border-[#218578] rounded-lg' data-aos="fade-left">
+              <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
                 <Image src={ShowCase1} alt="" />
               </div>
             </div>
@@ -85,9 +85,9 @@ export default function Home() {
 
               <div className='w-full flex items-center justify-center gap-6 bg-[#218578] p-4 rounded-lg' data-aos="fade-left">
                 <div className='p-6'>
-                  <p className='text-2xl font-bold mb-4'>The value of each product, small to large, sent by your parcel maker is important to us at GoPayra</p>
+                  <p className='text-2xl font-bold mb-4 text-center'>The value of each product, small to large, sent by your parcel maker is important to us at GoPayra</p>
                   <Link href="#download">
-                    <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-gopayra hover:bg-white active:scale-105'>
+                    <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
                       Download Our App
                     </button>
                   </Link>
