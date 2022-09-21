@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>GO PAYRA</title>
+        <title>GOPAYRA</title>
         <meta name="description" content="Go Payra Easy Solution" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

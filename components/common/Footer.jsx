@@ -31,40 +31,40 @@ const Footer = () => {
           <div>
             <h3 className='text-xl font-semibold mb-4'>Company</h3>
             <ul className='text-sm text-goDesc flex flex-col gap-2'>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">About Us</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Careers</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Contact</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Blog</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">About Us</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Careers</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Contact</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Blog</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className='text-xl font-semibold mb-4'>Support</h3>
             <ul className='text-sm text-goDesc flex flex-col gap-2'>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">FAQ</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Cookie Policy</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Terms of Service</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">FAQ</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Cookie Policy</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Terms of Service</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className='text-xl font-semibold mb-4'>Solutions</h3>
             <ul className='text-sm text-goDesc flex flex-col gap-2'>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Warehouse</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Cargo/Truck/Fleet management</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Home Delivery</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Employee Tracking</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Fleet & Driver Tracking</Link></li>
-              <li className='flex gap-1 items-center'><Image src={Leaf} alt="" /><Link href="/home">Distribution Channel</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Warehouse</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Cargo/Truck/Fleet management</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Home Delivery</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Employee Tracking</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Fleet & Driver Tracking</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Distribution Channel</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className='text-xl font-semibold mb-4'>Quick Contact</h3>
             <ul className='text-sm text-goDesc flex flex-col gap-2'>
-              <li className='flex gap-1 items-center'><Image src={Location} alt="" /><Link href="/home">House 10, Nikunjo 2, road 10 , house 10, khilkhet Dhaka</Link></li>
-              <li className='flex gap-1 items-center'><span><Image src={Email} alt="" /></span><Link href="/home">+8801533629552</Link></li>
-              <li className='flex gap-1 items-center'><span><Image src={Mobile} alt="" /></span><Link href="/home">info.gopayra@gmail.com</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Location} alt="" /><a href="https://goo.gl/maps/Aawq58xzsoSD87PL7" target="_blank" rel="noreferrer">House 10, Nikunjo 2, Road 10, Khilkhet Dhaka</a></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><span><Image src={Email} alt="" /></span><a href="tel:+8801533629552">+8801533629552</a></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><span><Image src={Mobile} alt="" /></span><a href="mailto:info.gopayra@gmail.com">info.gopayra@gmail.com</a></li>
             </ul>
           </div>
 
