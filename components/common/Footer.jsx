@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className='text-sm text-goDesc flex flex-col gap-2'>
               <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">FAQ</Link></li>
               <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Cookie Policy</Link></li>
-              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/home">Terms of Service</Link></li>
+              <li className='flex gap-1 items-center hover:text-white transition-all hover:scale-105'><Image src={Leaf} alt="" /><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
             </ul>
           </div>
 

@@ -6,14 +6,17 @@ import ShowCase1 from '../assets/images/showcase1.png'
 import ShowCase2 from '../assets/images/showcase2.png'
 import AppleAppStoreIcon from '../assets/images/icons/appleAppStoreIcon.svg';
 import GooglePlayIcon from '../assets/images/icons/googlePlayIcon.svg';
-import goPayraBanner from '../assets/images/gopayrabanner.png'
 import DowloadOurApp from '../assets/images/downloadourapp.png';
-import Rider from '../assets/images/rider.svg'
+import goPayraBanner from '../assets/images/gopayrabanner.png';
+import Rider from '../assets/images/rider.svg';
+import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 
 import Link from 'next/link';
 import Button from '../components/common/Button';
 import Image from 'next/image';
 import Footer from '../components/common/Footer';
+import Features from '../components/Features/Features';
+import Heading from '../components/common/Heading';
 
 export default function Home() {
   return (
@@ -75,9 +78,20 @@ export default function Home() {
           </Container>
         </section>
 
+        {/* Our solutions section */}
+        <Container>
+          <section className='text-center mt-10' data-aos="fade-in">
+            <Heading
+              heading="Our Truck Solutions"
+              subHeading="We Are Top Courier and Mover Service in Bangladesh"
+            />
+            <Image src={TruckSolutions} alt="" />
+          </section>
+        </Container>
+
         <Container>
           {/* showcase section 2 */}
-          <section className='relative my-10 md:my-32 border-4 border-[#218578] rounded-lg p-4'>
+          <section className='relative my-10 border-4 border-[#218578] rounded-lg p-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-right">
                 <Image src={ShowCase2} alt="" />

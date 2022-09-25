@@ -28,6 +28,48 @@ a {
   background-color: black;
 }
 
+.conditions {
+  text-align: justify;
+}
+
+.conditions h1 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  font-weight: 500;
+  color: #31B78A;
+}
+
+.conditions h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.conditions h5 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.conditions p {
+  font-size: 0.9em;
+  font-weight: lighter;
+  padding: .5em 0;
+}
+
+.conditions li {
+  font-size: 0.9em;
+  font-weight: lighter;
+  padding: .5em 0;
+  margin-left: 4em;
+}
+
+.conditions a {
+  text-decoration: none;
+  color: #31B78A;
+  font-weight: bold;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
