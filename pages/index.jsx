@@ -42,7 +42,7 @@ export default function Home() {
                 <div className='flex justify-center mt-8'>
                   <Link href="#download">
                     <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:bg-gopayraLight active:scale-105'>
-                      Download Our App
+                      Download Our App1
                     </button>
                   </Link>
                 </div>
