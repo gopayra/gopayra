@@ -14,9 +14,11 @@ import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 import Link from 'next/link';
 import Button from '../components/common/Button';
 import Image from 'next/image';
-import Footer from '../components/common/Footer';
+import Footer from '../components/common/Footer2';
 import Features from '../components/Features/Features';
 import Heading from '../components/common/Heading';
+import SingingCompany from '../components/Home/SingingCompany';
+import DownlaodOurApp from '../components/common/DownlaodOurApp';
 
 export default function Home() {
   return (
@@ -72,7 +74,7 @@ export default function Home() {
               </div>
 
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-                <Image src={ShowCase1} alt="" />
+                <Image src={ShowCase1} alt=""/>
               </div>
             </div>
           </Container>
@@ -111,30 +113,15 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          {/* Download Our APP section */}
-          <section className='grid grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-32' id="download">
-            <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
-              <div className='p-6 flex flex-col items-center'>
-                <h1 className='text-2xl font-bold uppercase text-gopayra'>Download Our App Now</h1>
-                <Button link="/appleAPP" logo={AppleAppStoreIcon} />
-                <Button link="/playAPP" logo={GooglePlayIcon} />
-              </div>
-            </div>
-
-            <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <Image src={DowloadOurApp} alt="" />
-            </div>
-          </section>
         </Container>
+
+        {/* Download Our APP section */}
+            <DownlaodOurApp />
+        
 
         {/* gopayra section */}
 
-        <section>
-          <div className='flex'>
-            <Image src={goPayraBanner} alt="" />
-          </div>
-        </section>
+        <SingingCompany />
       </main>
 
       <Footer />
