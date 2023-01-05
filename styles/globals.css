@@ -6,8 +6,6 @@ body {
   margin: 0;
   font-family: 'Figtree', sans-serif;
   position: relative;
-  /* background-color: #000; */
-  color: #fff;
 }
 
 a {
@@ -23,12 +21,16 @@ a {
   background: linear-gradient(90deg, rgba(49,182,139,1) 0%, rgba(52,196,126,1) 100%);
 }
 
+.gopayra-bg-v2 {
+  background: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
+}
+
 .hero-bg {
   background-image: url('../assets/images/header-bg.png');
   background-color: black;
 }
 
-.download-bg {
+.map-bg {
   background-image: url('../assets/images/bangladesh.png');
   background-repeat: no-repeat;
   background-position: center center;

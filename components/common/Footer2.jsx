@@ -12,7 +12,7 @@ import { UilTwitter, UilFacebookF, UilInstagram, UilYoutube } from '@iconscout/r
 
 const Footer = () => {
   const styles = {
-    h3Style: "text-xl font-semibold mb-4 mt-4 md:mt-0",
+    h3Style: "text-white text-xl font-semibold mb-4 mt-4 md:mt-0",
     ulStyle: "text-goDesc flex flex-col gap-2",
     liStyle: "flex text-goDesc gap-1 items-center hover:text-white transition-all hover:scale-105",
     iconStyle: "text-white hover:text-black inline-block p-2 rounded-full bg-liteBlack hover:bg-white cursor-pointer"
@@ -20,9 +20,9 @@ const Footer = () => {
   return (
     <footer className='bg-black'>
       <Container>
-        <div className='my-4 md:flex md:justify-between flex-wrap block mt-20 text-center md:text-left'>
-          <div className='w-64 items-center'>
-            <div className='cursor-pointer transition-all hover:scale-110 flex'>
+        <div className='my-4 md:flex md:justify-between justify-center flex-wrap block mt-20 text-center md:text-left'>
+          <div className='w-64 mx-auto md:mx-0'>
+            <div className='cursor-pointer transition-all hover:scale-110 flex' data-aos="flip-left">
               <Image src={Logo} alt="" width={100} height={100} />
             </div>
             <p className='mt-5 leading-6 text-goDesc'>Bringing automation in the logistics industry in Bangladesh through innovation.</p>

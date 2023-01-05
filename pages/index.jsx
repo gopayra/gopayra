@@ -19,6 +19,9 @@ import Features from '../components/Features/Features';
 import Heading from '../components/common/Heading';
 import SingingCompany from '../components/Home/SingingCompany';
 import DownlaodOurApp from '../components/common/DownlaodOurApp';
+import OurBlog from '../components/Home/OurBlog';
+import AppFeatures from '../components/Home/AppFeatures';
+import OurCEO from '../components/Home/OurCEO';
 
 export default function Home() {
   return (
@@ -74,7 +77,7 @@ export default function Home() {
               </div>
 
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-                <Image src={ShowCase1} alt=""/>
+                <Image src={ShowCase1} alt="" />
               </div>
             </div>
           </Container>
@@ -115,13 +118,21 @@ export default function Home() {
           </section>
         </Container>
 
+        {/* Our CEO section */}
+        <OurCEO />
+
+        {/* App Features section */}
+        <AppFeatures />
+
+        {/* Our blog section */}
+        <OurBlog />
+
         {/* Download Our APP section */}
-            <DownlaodOurApp />
-        
+        <DownlaodOurApp />
 
-        {/* gopayra section */}
-
+        {/* our clients section */}
         <SingingCompany />
+
       </main>
 
       <Footer />

@@ -5,29 +5,39 @@ import Image from 'next/image';
 import Woman from '../../assets/images/woman.png';
 
 const DownlaodOurApp = () => {
+  const downloadDetails = [
+    {
+      typeOfApps: "User apps",
+      appLink: "http://apple.com",
+      playLink: "http://google.com"
+    }, {
+      typeOfApps: "Driver apps",
+      appLink: "http://apple.com",
+      playLink: "http://google.com"
+    }, {
+      typeOfApps: "Partners apps",
+      appLink: "http://apple.com",
+      playLink: "http://google.com"
+    }
+  ]
   return (
     <section className='my-10 bg-slate-100 shadow-lg' id="download">
       <Container>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 items-center pt-5'>
           <div>
-            <div className='mb-10'>
-              <h1 className='text-black text-2xl font-semibold'>User apps</h1>
-              <AppButton />
-            </div>
+            {
+              downloadDetails.map((item, index) => {
+                return <div className='mb-10' key={index} data-aos="fade-right">
+                  <h1 className='text-2xl font-semibold'>{item.typeOfApps}</h1>
+                  <AppButton appLink={item.appLink} playLink={item.playLink} />
+                </div>
+              })
+            }
 
-            <div className='mb-10'>
-              <h1 className='text-black text-2xl font-semibold'>Driver apps</h1>
-              <AppButton />
-            </div>
-
-            <div className='mb-10'>
-              <h1 className='text-black text-2xl font-semibold'>Partners apps</h1>
-              <AppButton />
-            </div>
           </div>
 
           {/* image */}
-          <div className='download-bg'>
+          <div className='map-bg'>
             <div className='flex -mb-5'>
               <Image src={Woman} alt="woman" />
             </div>

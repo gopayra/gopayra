@@ -6,8 +6,8 @@ import Container from '../common/Container';
 const SingingCompany = () => {
   return (
     <Container >
-      <h1 className='text-black text-[28px] text-center font-semibold my-8'>Our singing company</h1>
-      <div className='flex justify-center gap-16 mb-14'>
+      <h1 className='text-black text-[28px] text-center font-semibold my-8' data-aos="zoom-in">Our singing company</h1>
+      <div className='flex justify-center flex-wrap gap-16 mb-14' data-aos="zoom-in">
         <Image src={ClientOne} alt="clientLogo" />
         <Image src={ClientOne} alt="clientLogo" />
         <Image src={ClientOne} alt="clientLogo" />
