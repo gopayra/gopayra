@@ -14,9 +14,16 @@ import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 import Link from 'next/link';
 import Button from '../components/common/Button';
 import Image from 'next/image';
-import Footer from '../components/common/Footer';
+import Footer from '../components/common/Footer2';
 import Features from '../components/Features/Features';
 import Heading from '../components/common/Heading';
+import SingingCompany from '../components/Home/SingingCompany';
+import DownlaodOurApp from '../components/common/DownlaodOurApp';
+import OurBlog from '../components/Home/OurBlog';
+import AppFeatures from '../components/Home/AppFeatures';
+import OurCEO from '../components/Home/OurCEO';
+import WhyChooseOurApps from '../components/Home/WhyChooseOurApps';
+import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
 
 export default function Home() {
   return (
@@ -42,7 +49,7 @@ export default function Home() {
                 <div className='flex justify-center mt-8'>
                   <Link href="#download">
                     <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:bg-gopayraLight active:scale-105'>
-                      Download Our App
+                      Download Our App1
                     </button>
                   </Link>
                 </div>
@@ -111,30 +118,28 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          {/* Download Our APP section */}
-          <section className='grid grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-32' id="download">
-            <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
-              <div className='p-6 flex flex-col items-center'>
-                <h1 className='text-2xl font-bold uppercase text-gopayra'>Download Our App Now</h1>
-                <Button link="/appleAPP" logo={AppleAppStoreIcon} />
-                <Button link="/playAPP" logo={GooglePlayIcon} />
-              </div>
-            </div>
-
-            <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <Image src={DowloadOurApp} alt="" />
-            </div>
-          </section>
         </Container>
+        {/* Choose your business section*/}
+        <ChooseYourBusiness />
 
-        {/* gopayra section */}
+        {/* Why choose our apps section */}
+        <WhyChooseOurApps />
 
-        <section>
-          <div className='flex'>
-            <Image src={goPayraBanner} alt="" />
-          </div>
-        </section>
+        {/* Our CEO section */}
+        <OurCEO />
+
+        {/* App Features section */}
+        <AppFeatures />
+
+        {/* Our blog section */}
+        <OurBlog />
+
+        {/* Download Our APP section */}
+        <DownlaodOurApp />
+
+        {/* our clients section */}
+        <SingingCompany />
+
       </main>
 
       <Footer />

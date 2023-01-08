@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Figtree', sans-serif;
   position: relative;
-  /* background-color: #000; */
-  color: #fff;
 }
 
 a {
@@ -23,9 +21,19 @@ a {
   background: linear-gradient(90deg, rgba(49,182,139,1) 0%, rgba(52,196,126,1) 100%);
 }
 
+.gopayra-bg-v2 {
+  background: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
+}
+
 .hero-bg {
   background-image: url('../assets/images/header-bg.png');
   background-color: black;
+}
+
+.map-bg {
+  background-image: url('../assets/images/bangladesh.png');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .conditions {
