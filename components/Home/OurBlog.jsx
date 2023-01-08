@@ -29,7 +29,7 @@ const OurBlog = () => {
       <div className='flex gap-4 justify-center flex-wrap lg:flex-nowrap my-10'>
         {
           cardData.map((item, index) => {
-            return <Card key={index} data={item}/>
+            return <Card key={index} data={item} />
           })
         }
       </div>

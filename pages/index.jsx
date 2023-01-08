@@ -22,6 +22,8 @@ import DownlaodOurApp from '../components/common/DownlaodOurApp';
 import OurBlog from '../components/Home/OurBlog';
 import AppFeatures from '../components/Home/AppFeatures';
 import OurCEO from '../components/Home/OurCEO';
+import WhyChooseOurApps from '../components/Home/WhyChooseOurApps';
+import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
 
 export default function Home() {
   return (
@@ -117,6 +119,11 @@ export default function Home() {
             </div>
           </section>
         </Container>
+        {/* Choose your business section*/}
+        <ChooseYourBusiness />
+
+        {/* Why choose our apps section */}
+        <WhyChooseOurApps />
 
         {/* Our CEO section */}
         <OurCEO />

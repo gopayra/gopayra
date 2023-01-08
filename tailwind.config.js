@@ -11,6 +11,7 @@ module.exports = {
         gopayraLight: "#31B78A",
         goDesc: "#C9C9CA",
         liteBlack: "rgba(255, 255, 255, 0.16)",
+        liteBorder: '#CDE2DF',
       },
       fontSize: {
          heading: ['42px', '58.8px']
