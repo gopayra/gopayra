@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/common/Container';
-import Navbar from '../components/common/Navbar';
+import Navbar from '../components/common/Navbar2';
 // main images import
 import ShowCase1 from '../assets/images/showcase1.png'
 import ShowCase2 from '../assets/images/showcase2.png'
@@ -14,9 +14,17 @@ import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 import Link from 'next/link';
 import Button from '../components/common/Button';
 import Image from 'next/image';
-import Footer from '../components/common/Footer';
+import Footer from '../components/common/Footer2';
 import Features from '../components/Features/Features';
 import Heading from '../components/common/Heading';
+import SingingCompany from '../components/Home/SingingCompany';
+import DownlaodOurApp from '../components/common/DownlaodOurApp';
+import OurBlog from '../components/Home/OurBlog';
+import AppFeatures from '../components/Home/AppFeatures';
+import OurCEO from '../components/Home/OurCEO';
+import WhyChooseOurApps from '../components/Home/WhyChooseOurApps';
+import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
+import HeroSection from '../components/Home/HeroSection';
 
 export default function Home() {
   return (
@@ -31,9 +39,9 @@ export default function Home() {
       <Navbar />
 
       <main>
-
         {/* hero section */}
-        <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
+        <HeroSection />
+        {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
               <div className='text-center'>
@@ -42,7 +50,7 @@ export default function Home() {
                 <div className='flex justify-center mt-8'>
                   <Link href="#download">
                     <button className='bg-gopayra text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:bg-gopayraLight active:scale-105'>
-                      Download Our App
+                      Download Our App1
                     </button>
                   </Link>
                 </div>
@@ -53,18 +61,18 @@ export default function Home() {
               </div>
             </div>
           </Container>
-        </section>
+        </section> */}
 
 
         {/* showcase section 1 */}
-        <section className='py-10 md:py-32 bg-gopayra'>
+        <section className='py-10 md:py-32'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
                 <div className='p-6'>
-                  <p className='text-2xl font-bold mb-4 text-white text-justify'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
+                  <p className='text-2xl font-bold mb-4 text-gopayra text-justify'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
                   <Link href="#download">
-                    <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
+                    <button className='bg-gopayraLight text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-gopayraLight hover:bg-white active:scale-105'>
                       Download Our App
                     </button>
                   </Link>
@@ -111,30 +119,28 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          {/* Download Our APP section */}
-          <section className='grid grid-cols-1 md:grid-cols-2 gap-4 my-10 md:my-32' id="download">
-            <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
-              <div className='p-6 flex flex-col items-center'>
-                <h1 className='text-2xl font-bold uppercase text-gopayra'>Download Our App Now</h1>
-                <Button link="/appleAPP" logo={AppleAppStoreIcon} />
-                <Button link="/playAPP" logo={GooglePlayIcon} />
-              </div>
-            </div>
-
-            <div className='w-full flex items-center justify-center gap-4' data-aos="fade-left">
-              <Image src={DowloadOurApp} alt="" />
-            </div>
-          </section>
         </Container>
+        {/* Choose your business section*/}
+        <ChooseYourBusiness />
 
-        {/* gopayra section */}
+        {/* Why choose our apps section */}
+        <WhyChooseOurApps />
 
-        <section>
-          <div className='flex'>
-            <Image src={goPayraBanner} alt="" />
-          </div>
-        </section>
+        {/* Our CEO section */}
+        <OurCEO />
+
+        {/* App Features section */}
+        <AppFeatures />
+
+        {/* Our blog section */}
+        <OurBlog />
+
+        {/* Download Our APP section */}
+        <DownlaodOurApp />
+
+        {/* our clients section */}
+        <SingingCompany />
+
       </main>
 
       <Footer />
