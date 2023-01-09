@@ -33,11 +33,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className='map-bg-white h-full flex justify-center items-center'>
+          <div className='hidden map-bg-white h-full md:flex justify-center items-center'>
             <div className='flex'>
               <Image src={TruckImage} alt="" data-aos="zoom-in" />
             </div>
-            <div className='absolute top-[4.6em] right-2'>
+            <div className='absolute top-[4.6em] -mr-[16rem]'>
               <Image src={CourierManImage} alt="" data-aos="fade-left" />
             </div>
           </div>
@@ -47,7 +47,7 @@ const HeroSection = () => {
         {/* Solutions */}
         <div>
           <div>
-            
+
           </div>
         </div>
       </Container>
