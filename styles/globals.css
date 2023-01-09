@@ -36,6 +36,12 @@ a {
   background-position: center center;
 }
 
+.map-bg-white {
+  background-image: url('../assets/images/bangladesh-white.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .conditions {
   text-align: justify;
 }

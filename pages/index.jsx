@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/common/Container';
-import Navbar from '../components/common/Navbar';
+import Navbar from '../components/common/Navbar2';
 // main images import
 import ShowCase1 from '../assets/images/showcase1.png'
 import ShowCase2 from '../assets/images/showcase2.png'
@@ -24,6 +24,7 @@ import AppFeatures from '../components/Home/AppFeatures';
 import OurCEO from '../components/Home/OurCEO';
 import WhyChooseOurApps from '../components/Home/WhyChooseOurApps';
 import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
+import HeroSection from '../components/Home/HeroSection';
 
 export default function Home() {
   return (
@@ -38,9 +39,9 @@ export default function Home() {
       <Navbar />
 
       <main>
-
         {/* hero section */}
-        <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
+        <HeroSection />
+        {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
               <div className='text-center'>
@@ -60,18 +61,18 @@ export default function Home() {
               </div>
             </div>
           </Container>
-        </section>
+        </section> */}
 
 
         {/* showcase section 1 */}
-        <section className='py-10 md:py-32 bg-gopayra'>
+        <section className='py-10 md:py-32'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
                 <div className='p-6'>
-                  <p className='text-2xl font-bold mb-4 text-white text-justify'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
+                  <p className='text-2xl font-bold mb-4 text-gopayra text-justify'>You can see where the delivery boy is with your product sitting at home, outside & office. There is also the option of delivery by setting the time given by you.</p>
                   <Link href="#download">
-                    <button className='bg-white text-gopayraLight flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-white hover:bg-gopayraLight active:scale-105'>
+                    <button className='bg-gopayraLight text-white flex items-center gap-4 px-16 py-4 rounded-lg text-2xl hover:text-gopayraLight hover:bg-white active:scale-105'>
                       Download Our App
                     </button>
                   </Link>
