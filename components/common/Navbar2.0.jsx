@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <Image src={Logo} alt="brand-logo" height={40} width={40}></Image>
+              <Image src={Logo} alt="brand-logo" height={60} width={60}></Image>
             </Link>
           </div>
           {/* Nav items */}

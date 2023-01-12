@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/common/Container';
-import Navbar from '../components/common/Navbar2';
+import Navbar from '../components/common/Navbar2.0';
 // main images import
 import ShowCase1 from '../assets/images/showcase1.png'
 import ShowCase2 from '../assets/images/showcase2.png'

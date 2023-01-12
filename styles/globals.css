@@ -42,6 +42,14 @@ a {
   background-position: center center;
 }
 
+.card svg{
+  fill: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
+}
+
+.card-gradient-bg {
+  background: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
+}
+
 .conditions {
   text-align: justify;
 }
@@ -72,6 +80,7 @@ a {
 }
 
 .conditions li {
+  list-style-type: none;
   font-size: 0.9em;
   font-weight: lighter;
   padding: .5em 0;

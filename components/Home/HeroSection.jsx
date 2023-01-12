@@ -6,16 +6,20 @@ import CourierManImage from '../../assets/images/courier-man.png';
 import Image from 'next/image';
 
 const HeroSection = () => {
+  const ourServices = [{
+    title: "Rent by day",
+    description: "Hire our truck rent by day"
+  }]
   return (
     <section className='bg-gopayra bg-no-repeat bg-center bg-contain h-[800px]'>
       <Container>
         <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
           <div>
-            <h1 className='text-white font-bold text-[64px] mb-12'>The largest last mile delivery service in Bangladesh</h1>
+            <h1 className='text-white font-bold text-5xl md:text-[64px] mb-12 whitespace-nowrap'>The largest last mile <br /> delivery service in <br /> Bangladesh</h1>
 
             <DownlaodOurAppButton />
 
-            <div className='mt-12 flex gap-16'>
+            <div className='mt-12 flex gap-14'>
               <div className='text-white'>
                 <h2 className='text-[32px] font-semibold'>65%</h2>
                 <p className='text-sm'>Scale up Operations</p>
@@ -43,14 +47,13 @@ const HeroSection = () => {
           </div>
 
         </div>
-
-        {/* Solutions */}
-        <div>
-          <div>
-
-          </div>
-        </div>
       </Container>
+
+      {/* Solutions */}
+      <div className='-mt-20'>
+        {/* slider */}
+        
+      </div>
     </section>
 
   );
