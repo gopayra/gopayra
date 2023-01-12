@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         gopayra: "#1F8578",
         gopayraLight: "#31B78A",
-        goDesc: "#C9C9CA",
+        goDesc: "#68686B",
         liteBlack: "rgba(255, 255, 255, 0.16)",
         liteBorder: '#CDE2DF',
       },

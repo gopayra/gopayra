@@ -1,22 +1,17 @@
 import Head from 'next/head';
 import Container from '../components/common/Container';
-import Navbar from '../components/common/Navbar2';
+import Navbar from '../components/common/Navbar2.0';
 // main images import
 import ShowCase1 from '../assets/images/showcase1.png'
 import ShowCase2 from '../assets/images/showcase2.png'
-import AppleAppStoreIcon from '../assets/images/icons/appleAppStoreIcon.svg';
-import GooglePlayIcon from '../assets/images/icons/googlePlayIcon.svg';
-import DowloadOurApp from '../assets/images/downloadourapp.png';
-import goPayraBanner from '../assets/images/gopayrabanner.png';
-import Rider from '../assets/images/rider.svg';
 import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 
 import Link from 'next/link';
-import Button from '../components/common/Button';
+import GoPayraButton from '../components/common/GoPayraButton';
 import Image from 'next/image';
 import Footer from '../components/common/Footer2';
 import Features from '../components/Features/Features';
-import Heading from '../components/common/Heading';
+import GoPayraHeading from '../components/UI/GoPayraHeading';
 import SingingCompany from '../components/Home/SingingCompany';
 import DownlaodOurApp from '../components/common/DownlaodOurApp';
 import OurBlog from '../components/Home/OurBlog';
@@ -89,7 +84,7 @@ export default function Home() {
         {/* Our solutions section */}
         <Container>
           <section className='text-center mt-10' data-aos="fade-in">
-            <Heading
+            <GoPayraHeading
               heading="Our Truck Solutions"
               subHeading="We Are Top Courier and Mover Service in Bangladesh"
             />

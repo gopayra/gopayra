@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Container from './Container';
-import Button from './Button';
+import Button from './GoPayraButton';
 import Logo from "../../assets/images/logos/lite-logo.png";
 import Hamburger from '../../assets/images/icons/hamburger.svg';
 import Cross from '../../assets/images/icons/cross.svg';
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <Image src={Logo} alt="brand-logo" height={40} width={40}></Image>
+              <Image src={Logo} alt="brand-logo" height={60} width={60}></Image>
             </Link>
           </div>
           {/* Nav items */}
