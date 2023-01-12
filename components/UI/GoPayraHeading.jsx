@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Heading = ({ heading, subHeading }) => {
+const GoPayraHeading = ({ heading, subHeading }) => {
   return (
     <>
       <h1 className='text-gopayra text-4xl font-extrabold' data-aos="zoom-in">{heading}</h1>
@@ -9,4 +9,4 @@ const Heading = ({ heading, subHeading }) => {
   );
 };
 
-export default Heading;
+export default GoPayraHeading;
