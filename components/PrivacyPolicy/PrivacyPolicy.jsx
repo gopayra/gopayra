@@ -1,16 +1,16 @@
 import React from 'react';
-import Heading from '../common/Heading';
+import Heading from '../UI/GoPayraHeading';
 
-const TAndC = () => {
+const PrivacyPolicy = () => {
   return (
     <div className='mt-40 text-black px-8'>
       <div className='text-center my-8'>
         <Heading
-          heading="Terms and Conditions"
+          heading="PRIVACY POLICY"
         />
       </div>
       {/* condition 1 */}
-      <div className="conditions">
+      <div className="conditions policy">
         <h1>1. Introduction</h1>
         <h2>Welcome to GoPayra</h2>
         <p>GoPayra (“us”, “we”, or “our”) operates <a href="https://gopayra.com/">gopayra.com</a> (hereinafter referred to as “Service”).</p>
@@ -162,4 +162,4 @@ const TAndC = () => {
   );
 };
 
-export default TAndC;
+export default PrivacyPolicy;

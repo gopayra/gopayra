@@ -80,6 +80,13 @@ a {
 }
 
 .conditions li {
+  font-size: 0.9em;
+  font-weight: lighter;
+  padding: .5em 0;
+  margin-left: 4em;
+}
+
+.policy li {
   list-style-type: none;
   font-size: 0.9em;
   font-weight: lighter;

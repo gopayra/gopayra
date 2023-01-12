@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Container from './Container';
-import Button from './Button';
+import Button from './GoPayraButton';
 import Logo from "../../assets/images/logos/lite-logo.png";
 import Hamburger from '../../assets/images/icons/hamburger.svg';
 import Cross from '../../assets/images/icons/cross.svg';

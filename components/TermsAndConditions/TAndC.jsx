@@ -1,11 +1,11 @@
 import React from 'react';
-import Heading from '../common/Heading';
+import GoPayraHeading from '../UI/GoPayraHeading';
 
 const TAndC = () => {
   return (
     <div className='mt-40 text-black px-8'>
       <div className='text-center my-8'>
-        <Heading
+        <GoPayraHeading
           heading="Terms and Conditions"
         />
       </div>
