@@ -7,9 +7,9 @@ import ShowCase2 from '../assets/images/showcase2.png'
 import TruckSolutions from '../assets/images/features/truck-solutions.jpeg';
 
 import Link from 'next/link';
-import GoPayraButton from '../components/common/GoPayraButton';
+import GoPayraButton from '../components/UI/GoPayraButton';
 import Image from 'next/image';
-import Footer from '../components/common/Footer2';
+import Footer from '../components/common/Footer';
 import Features from '../components/Features/Features';
 import GoPayraHeading from '../components/UI/GoPayraHeading';
 import SingingCompany from '../components/Home/SingingCompany';

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Container from './Container';
-import Button from './GoPayraButton';
+import GoPayraButton from '../UI/GoPayraButton';
 import Logo from "../../assets/images/logos/lite-logo.png";
 import Hamburger from '../../assets/images/icons/hamburger.svg';
 import Cross from '../../assets/images/icons/cross.svg';
@@ -65,8 +65,8 @@ const Navbar = () => {
             <div>
               <p className='text-slate-400 pb-4'>Download our app</p>
               <div className='flex gap-4 justify-end'>
-                <Button logo={AppleAppStoreIcon} text="App Store" link="/apple"></Button>
-                <Button logo={GooglePlayIcon} text="Google Play" link="/google"></Button>
+                <GoPayraButton logo={AppleAppStoreIcon} text="App Store" link="/apple"></GoPayraButton>
+                <GoPayraButton logo={GooglePlayIcon} text="Google Play" link="/google"></GoPayraButton>
               </div>
             </div>
           </div>
