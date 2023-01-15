@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../../components/common/Container';
-import Footer from '../../components/common/Footer2';
+import Footer from '../../components/common/Footer';
 import Navbar from '../../components/common/Navbar';
 import TAndC from '../../components/TermsAndConditions/TAndC';
 import AppleAppStoreIcon from '../../assets/images/icons/appleAppStoreIcon.svg';
@@ -12,13 +12,15 @@ import SingingCompany from '../../components/Home/SingingCompany';
 const index = () => {
   return (
     <>
-      <Navbar></Navbar>
-      <Container>
-        <TAndC />
-      </Container>
-      <DownlaodOurApp />
-      <SingingCompany />
-      <Footer></Footer>
+      <Navbar />
+      <main>
+        <Container>
+          <TAndC />
+        </Container>
+        <DownlaodOurApp />
+        <SingingCompany />
+      </main>
+      <Footer />
     </>
   );
 };
