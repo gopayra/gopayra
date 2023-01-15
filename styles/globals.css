@@ -40,6 +40,7 @@ a {
   background-image: url('../assets/images/bangladesh-white.png');
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .card svg{
