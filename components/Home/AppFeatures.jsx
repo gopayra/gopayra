@@ -9,7 +9,7 @@ import MultiPoint from '../../assets/images/features/pins.svg';
 import Schedule from '../../assets/images/features/schedule.svg';
 import ResendOrders from '../../assets/images/features/resend-orders.svg';
 import Address from '../../assets/images/features/address.svg';
-import Map from '../../assets/images/bangladesh.png';
+import Map from '../../public/bangladesh.png';
 
 const AppFeatures = () => {
   return (
