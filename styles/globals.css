@@ -101,6 +101,35 @@ a {
   font-weight: bold;
 }
 
+
+/* slider css */
+.swiper-wrapper {
+  padding-bottom: 2rem;
+  margin-left: 23rem !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .swiper-wrapper {    
+    margin-left: 14rem !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .swiper-wrapper {    
+    margin-left: 8.5rem !important;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .swiper-wrapper {    
+    margin-left: 1rem !important;
+  }
+}
+
+.swiper-slide {
+  flex-shrink: 1 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
