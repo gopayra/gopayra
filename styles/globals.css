@@ -31,13 +31,13 @@ a {
 }
 
 .map-bg {
-  background-image: url('../assets/images/bangladesh.png');
+  background-image: url('../public/bangladesh.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .map-bg-white {
-  background-image: url('../assets/images/bangladeshLite.png');
+  background-image: url('../public/bangladeshLite.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
