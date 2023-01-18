@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import QouteIcon from '../../assets/images/icons/quote-left.svg'
 import Container from '../common/Container';
-import CEO from '../../assets/images/ceo.png';
+import CEO from '../../assets/images/ceo.webp';
 
 const OurCEO = () => {
   return (

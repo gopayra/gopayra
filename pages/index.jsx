@@ -20,8 +20,16 @@ import OurCEO from '../components/Home/OurCEO';
 import WhyChooseOurApps from '../components/Home/WhyChooseOurApps';
 import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
 import HeroSection from '../components/Home/HeroSection';
+import CountUp from 'react-countup';
+import { useState } from 'react';
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+  const onStart = () => { setLoading(true) };
+  const onEnd = () => { setLoading(false) };
+  const containerProps = {
+    'aria-busy': loading
+  };
   return (
     <>
       <Head>
@@ -58,10 +66,10 @@ export default function Home() {
           </Container>
         </section> */}
 
-        
+        {/* <CountUp end={100} duration="3" onStart={onStart} onEnd={onEnd} containerProps={containerProps} /> */}
 
         {/* showcase section 1 */}
-        <section className='py-10 md:py-32'>
+        {/* <section className='py-10 md:py-32'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-6' data-aos="fade-right">
@@ -80,11 +88,11 @@ export default function Home() {
               </div>
             </div>
           </Container>
-        </section>
+        </section> */}
 
         {/* Our solutions section */}
         <Container>
-          <section className='text-center mt-10' data-aos="fade-in">
+          <section className='text-center mt-44' data-aos="fade-in">
             <GoPayraHeading
               heading="Our Truck Solutions"
               subHeading="We Are Top Courier and Mover Service in Bangladesh"
