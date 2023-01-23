@@ -47,10 +47,6 @@ a {
   fill: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
 }
 
-.card-gradient-bg {
-  background: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
-}
-
 .conditions {
   text-align: justify;
 }
@@ -99,6 +95,10 @@ a {
   text-decoration: none;
   color: #31B78A;
   font-weight: bold;
+}
+
+.solution-card-wrapper:hover p {
+  color: white;
 }
 
 

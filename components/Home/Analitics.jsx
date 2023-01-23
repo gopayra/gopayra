@@ -23,7 +23,7 @@ const Analitics = () => {
     icon: TruckIcon,
     numbers: 500,
     type: 'Trucks',
-    duration: 60
+    duration: 50
   }, {
     icon: DriversIcon,
     numbers: 1000,
@@ -31,7 +31,7 @@ const Analitics = () => {
     duration: 60
   }]
   return (
-    <div className='h-80 bg-gopayra mt-52'>
+    <section className='h-80 bg-gopayra mt-52'>
       <Container>
         <div className='flex justify-between h-full items-center'>
           {
@@ -49,7 +49,7 @@ const Analitics = () => {
           }
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
