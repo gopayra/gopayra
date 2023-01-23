@@ -22,6 +22,7 @@ import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
 import HeroSection from '../components/Home/HeroSection';
 import CountUp from 'react-countup';
 import { useState } from 'react';
+import Analitics from '../components/Home/Analitics';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -44,6 +45,8 @@ export default function Home() {
       <main>
         {/* hero section */}
         <HeroSection />
+
+        <Analitics />
         {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
