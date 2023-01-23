@@ -8,3 +8,6 @@ This is GoPayra Repository
 
 **Client:** Next, TailwindCSS
 
+### Branches 
+1. main = Product
+2. staging = preview of product
