@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from '../common/Container';
 import DownlaodOurAppButton from '../UI/DownlaodOurAppButton';
-import TruckImage from '../../assets/images/hero-truck.png';
-import CourierManImage from '../../assets/images/courier-man.png';
+import TruckImage from '../../assets/images/hero-truck.webp';
+import CourierManImage from '../../assets/images/courier-man.webp';
 import Image from 'next/image';
 import GoPayraSlider from '../common/GoPayraSlider';
 import RentCarIcon from '../../assets/images/icons/rent-by-day.svg';
@@ -22,6 +22,8 @@ import FoodDeliveryLiteIcon from '../../assets/images/icons/food-delivery-lite.s
 
 import ParcelTruckIcon from '../../assets/images/icons/parcel-truck.svg';
 import ParcelTruckLiteIcon from '../../assets/images/icons/parcel-truck-lite.svg';
+
+
 
 const HeroSection = () => {
   const ourServices = [{
@@ -105,6 +107,7 @@ const HeroSection = () => {
         {/* slider */}
         <GoPayraSlider data={ourServices} />
       </div>
+      
     </section>
 
   );

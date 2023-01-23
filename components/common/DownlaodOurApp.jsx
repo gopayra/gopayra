@@ -2,7 +2,7 @@ import React from 'react';
 import AppButton from '../UI/AppButton';
 import Container from './Container';
 import Image from 'next/image';
-import Woman from '../../assets/images/woman.png';
+import Man from '../../assets/images/man.webp';
 
 const DownlaodOurApp = () => {
   const downloadDetails = [
@@ -39,7 +39,7 @@ const DownlaodOurApp = () => {
           {/* image */}
           <div className='map-bg'>
             <div className='flex -mb-5'>
-              <Image src={Woman} alt="woman" />
+              <Image src={Man} alt="woman" />
             </div>
           </div>
         </div>
