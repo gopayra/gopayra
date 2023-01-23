@@ -1,17 +1,23 @@
 import React from 'react';
 import DownlaodOurApp from '../../components/common/DownlaodOurApp';
 import Footer from '../../components/common/Footer';
-import ContactUsImage from '../../assets/images/contact-us.png'
+import ContactUsImage from '../../assets/images/contact-us.webp'
 import Image from 'next/image';
 import Container from '../../components/common/Container';
 import Navbar from '../../components/common/Navbar2.0';
 import ContactusForm from '../../components/common/ContactusForm';
+import Head from 'next/head';
 
 const index = () => {
   return (
     <>
-
-    <Navbar></Navbar>
+      <Head>
+        <title>GOPAYRA - Contact us</title>
+        <meta name="description" content="Go Payra Easy Solution" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
+      <Navbar></Navbar>
       <main>
         {/* contacts us hero section */}
         <div className='bg-gopayra h-[676px]'>

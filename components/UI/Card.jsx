@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Thumbnail from '../../assets/images/card-thumbnail.png';
+import Thumbnail from '../../assets/images/card-thumbnail.webp';
 
 const Card = ({data}) => {
   return (
