@@ -25,6 +25,7 @@ const GoSlider = ({ data }) => {
             slidesPerView: 2,
           },
         }}
+        className="ourServices-slider"
       >
         {data.map((item, index) => {
           return <SwiperSlide key={index} >

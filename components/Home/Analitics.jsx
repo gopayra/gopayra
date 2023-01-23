@@ -31,9 +31,9 @@ const Analitics = () => {
     duration: 60
   }]
   return (
-    <section className='h-80 bg-gopayra mt-52'>
+    <section className='h-full md:h-80 bg-gopayra mt-52'>
       <Container>
-        <div className='flex justify-between h-full items-center'>
+        <div className='flex gap-16 flex-wrap md:flex-nowrap justify-center md:justify-between h-full items-center py-8 md:py-0'>
           {
             AnaliticsData.map((item, index) => {
               return <div className='flex gap-6 items-center h-full w-72' key={index}>

@@ -12,7 +12,7 @@ module.exports = {
         goDesc: "#68686B",
         liteBlack: "rgba(255, 255, 255, 0.16)",
         liteBorder: '#CDE2DF',
-        liteGray: '#F6F9FC;',
+        liteGray: '#F6F9FC',
       },
       fontSize: {
          heading: ['42px', '58.8px']

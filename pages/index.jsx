@@ -25,6 +25,8 @@ import { useState } from 'react';
 import Analitics from '../components/Home/Analitics';
 import OurSolution from '../components/Home/OurSolution';
 import GopayraGuarantee from '../components/Home/GopayraGuarantee';
+import CustomGoPayraSlider from '../components/common/CustomGoPayraSlider';
+import OurTransport from '../components/Home/OurTransport';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -53,6 +55,7 @@ export default function Home() {
         <OurSolution />
 
         <GopayraGuarantee />
+
         {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
@@ -138,6 +141,9 @@ export default function Home() {
 
         {/* Why choose our apps section */}
         <WhyChooseOurApps />
+
+        {/* Our transport section */}
+        <OurTransport />
 
         {/* Our CEO section */}
         <OurCEO />
