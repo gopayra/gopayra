@@ -37,11 +37,11 @@ const Analitics = () => {
           {
             AnaliticsData.map((item, index) => {
               return <div className='flex gap-6 items-center h-full w-72' key={index}>
-                <div className='bg-[#CDE2DF] rounded-[20px] px-[1.313em] py-[1.094em]'>
+                <div className='bg-[#CDE2DF] rounded-[20px] px-[1.313em] py-[1.094em] w-[90px] h-[90px]'>
                   <Image src={item.icon} alt="" />
                 </div>
                 <div className='text-white'>
-                  <h1 className='text-heading font-semibold'><CountUp start={item.numbers - 40} end={item.numbers} duration={item.duration} />+ </h1>
+                  <h1 className='text-heading font-semibold w-[125px]'><CountUp start={item.numbers - 40} end={item.numbers} duration={item.duration} />+ </h1>
                   <p className='text-xl font-medium'>{item.type}</p>
                 </div>
               </div>

@@ -14,7 +14,7 @@ const Footer = () => {
   const styles = {
     h3Style: "text-white text-xl font-semibold mb-4 mt-4 md:mt-0",
     ulStyle: "text-goDesc flex flex-col gap-2",
-    liStyle: "flex text-goDesc gap-1 items-center hover:text-white transition-all hover:scale-105",
+    liStyle: "flex text-[#C9C9CA] gap-1 items-center hover:text-white transition-all hover:scale-105",
     iconStyle: "text-white hover:text-black inline-block p-2 rounded-full bg-liteBlack hover:bg-white cursor-pointer"
   }
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='cursor-pointer transition-all hover:scale-110 flex' data-aos="flip-left">
               <Image src={Logo} alt="" width={100} height={100} />
             </div>
-            <p className='mt-5 leading-6 text-goDesc'>Bringing automation in the logistics industry in Bangladesh through innovation.</p>
+            <p className='mt-5 leading-6 text-[#C9C9CA]'>Bringing automation in the logistics industry in Bangladesh through innovation.</p>
             {/* social links */}
             <div className='flex gap-4 items-center my-10'>
               <div className='cursor-pointer transition-all hover:scale-110'><a href="/twitter"><div className={styles.iconStyle}>
@@ -65,14 +65,14 @@ const Footer = () => {
           <div>
             <h3 className={styles.h3Style}>Solutions</h3>
             <ul className={styles.ulStyle}>
-              <li className={styles.liStyle}><Link href="/home">Retail & FMCG</Link></li>
-              <li className={styles.liStyle}><Link href="/home">E-Commerce</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Food & Grocery</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Courier & Parcel</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Logistics Management</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Industry data analysis</Link></li>
-              <li className={styles.liStyle}><Link href="/home">All delivery system</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Fleet & Driver Management</Link></li>
+              <li className={styles.liStyle}><Link href="solutions/supply-chain-management">Supply chain management</Link></li>
+              <li className={styles.liStyle}><Link href="/e-commerce">E-Commerce</Link></li>
+              <li className={styles.liStyle}><Link href="/food-delivery-system">Food delivery system</Link></li>
+              <li className={styles.liStyle}><Link href="/retail-and-FMCG">Retail and FMCG</Link></li>
+              <li className={styles.liStyle}><Link href="/courier-and-parcel">Courier & parcel</Link></li>
+              <li className={styles.liStyle}><Link href="/logistics-management">Logistics Management</Link></li>
+              <li className={styles.liStyle}><Link href="/industry-data-analysis">Industry data analysis</Link></li>
+              <li className={styles.liStyle}><Link href="/fleet-and-driver-management">Fleet & Driver Management</Link></li>
             </ul>
           </div>
 
@@ -88,7 +88,7 @@ const Footer = () => {
 
         {/* copyright */}
         <div className='border-t border-[#ffffff65] py-6 text-center'>
-          <p className='text-xs text-goDesc'>Copyright © 2022 GoPayra. All rights reserved.
+          <p className='text-goDesc'>Copyright © 2022 GoPayra. All rights reserved.
           </p>
         </div>
       </Container>

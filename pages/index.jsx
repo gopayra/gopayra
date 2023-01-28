@@ -43,9 +43,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Navbar />
-
       <main>
         {/* hero section */}
         <HeroSection />
@@ -113,8 +110,8 @@ export default function Home() {
           </section>
         </Container>
 
-        <Container>
           {/* showcase section 2 */}
+        {/* <Container>
           <section className='relative my-10 border-4 border-[#218578] rounded-lg p-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-right">
@@ -135,7 +132,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </Container>
+        </Container> */}
         {/* Choose your business section*/}
         <ChooseYourBusiness />
 
@@ -161,8 +158,6 @@ export default function Home() {
         <SingingCompany />
 
       </main>
-
-      <Footer />
     </>
   )
 }

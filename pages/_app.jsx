@@ -7,10 +7,15 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
+import Layout from '../components/common/Layout';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => { AOS.init(); }, [])
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp

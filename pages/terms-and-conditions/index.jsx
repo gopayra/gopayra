@@ -19,7 +19,6 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <main>
         <Container>
           <TAndC />
@@ -27,7 +26,6 @@ const index = () => {
         <DownlaodOurApp />
         <SingingCompany />
       </main>
-      <Footer />
     </>
   );
 };

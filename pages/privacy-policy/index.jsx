@@ -16,8 +16,6 @@ const index = () => {
         <meta name="description" content="Go Payra Easy Solution" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
       <main>
         <Container>
           <PrivacyPolicy />
@@ -25,7 +23,6 @@ const index = () => {
         <DownlaodOurApp />
         <SingingCompany />
       </main>
-      <Footer />
     </>
   );
 };
