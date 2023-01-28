@@ -12,7 +12,9 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/privacy-policy': { page: '/privacy-policy' },
+      '/terms-and-conditions': { page: '/terms-and-conditions' },
     }
   },
   images: {

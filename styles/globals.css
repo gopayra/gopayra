@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap');
+@import './NotFound.css';
 
 html,
 body {
@@ -6,6 +7,7 @@ body {
   margin: 0;
   font-family: 'Figtree', sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -45,10 +47,6 @@ a {
 
 .card svg{
   fill: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
-}
-
-.card-gradient-bg {
-  background: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
 }
 
 .conditions {
@@ -101,22 +99,98 @@ a {
   font-weight: bold;
 }
 
+.solution-card-wrapper:hover p {
+  color: white;
+}
 
-/* slider css */
+
+/* ***********************00000000000000000 slider css 000000000000***********/
+.swiper {
+  height: 100% !important;
+}
 .swiper-wrapper {
   padding-bottom: 2rem;
   margin-left: 23rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.ourServices-slider .swiper-slide {
+  flex-shrink: 1 !important;
+}
+
+.swiper-scrollbar {
+  display: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #1F8578 !important;
+}
+
+
+@media screen  and (min-width: 1319px ) {
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-left: 7.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .swiper-scrollbar {
+    display: block;
+    max-width: 971px !important;
+    height: 2px !important;
+    background: #CDE2DF !important;
+  }
+  
+  .swiper-scrollbar-drag {
+    width: 50%;
+    background: #1F8578 !important;
+    width: 400px !important;
+  }
+  
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 1219px !important;
+  }
+  
+  .swiper-button-next, .swiper-rtl .swiper-button-next {
+    left: 1270px !important;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    top: 93% !important;
+    color: #1F8578 !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-left: 21rem;
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 1360px !important;
+  }
+  
+  .swiper-button-next, .swiper-rtl .swiper-button-next {
+    left: 1400px !important;
+  }
+
 }
 
 @media screen and (max-width: 1600px) {
   .swiper-wrapper {    
     margin-left: 14rem !important;
   }
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-left: 13rem;
+  }
+  
 }
 
 @media screen and (max-width: 1440px) {
   .swiper-wrapper {    
     margin-left: 8.5rem !important;
+  }
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-left: 7.5rem;
   }
 }
 
@@ -124,11 +198,12 @@ a {
   .swiper-wrapper {    
     margin-left: 1rem !important;
   }
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-left: 0.7rem;
+  }
 }
 
-.swiper-slide {
-  flex-shrink: 1 !important;
-}
+
 
 @tailwind base;
 @tailwind components;
