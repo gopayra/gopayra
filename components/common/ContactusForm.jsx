@@ -3,10 +3,7 @@ import FormInput from '../UI/FormInput';
 import Container from './Container';
 import GoPayraButton from '../UI/GoPayraButton';
 
-const ContactusForm = () => {
-  const styles = {
-    input: "w-full px-4"
-  }
+const ContactusForm = () => {  
   return (
     <Container>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-20 mt-20'>

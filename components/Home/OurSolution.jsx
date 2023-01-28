@@ -10,6 +10,7 @@ import Thumbnail5 from '../../assets/images/courier-parcel.webp'
 import Thumbnail6 from '../../assets/images/retailandfmcg.webp'
 import Thumbnail7 from '../../assets/images/foodDelivery.webp'
 import Thumbnail8 from '../../assets/images/ecommerce.webp'
+import Thumbnail9 from '../../assets/images/fleetandDrivermng.webp'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -19,7 +20,7 @@ const OurSolution = () => {
     Thumbnail: Thumbnail,
     title: "Supply chain management",
     description: 'Only Gopayra company give you Supply management system : supply planning',
-    link: "/Supply"
+    link: "/supply-chain-management"
   }, {
     Thumbnail: Thumbnail2,
     title: "E-Commerce",
@@ -39,22 +40,27 @@ const OurSolution = () => {
     Thumbnail: Thumbnail5,
     title: "Courier & parcel",
     description: 'Only we have delivered the Fastest last mile Delivery. Real time door to door Delivery',
-    link: "/Supply"
+    link: "/courier-and-parcel"
   }, {
     Thumbnail: Thumbnail6,
     title: "Logistics Management",
     description: 'What are the benefits of Last-Mile Shipment visibility? There are numerous benefits',
-    link: "/Supply"
+    link: "/logistics-management"
   }, {
     Thumbnail: Thumbnail7,
     title: "Industry data analysis",
     description: 'we give you big data analysis and supply chain management systems. Through which',
-    link: "/Supply"
+    link: "/industry-data-analysis"
   }, {
     Thumbnail: Thumbnail8,
     title: "All delivery system",
     description: 'According to one retailer, speed of delivery is the most important metric that drives loyalty. ',
-    link: "/Supply"
+    link: "/all-delivery-system"
+  }, {
+    Thumbnail: Thumbnail9,
+    title: "Fleet & Driver Management",
+    description: "Fleet management should live in your pocket. Gopayra's web and mobile...",
+    link: "/fleet-and-driver-management"
   }]
   return (
     <section className='py-16 bg-liteGray'>
@@ -64,7 +70,7 @@ const OurSolution = () => {
 
         <div className='flex flex-wrap justify-center md:justify-between items-center'>
           {solutionData.map((data, index) => {
-            return <Link href={data.link} key={index}>
+            return <Link href={`solutions${data.link}`} key={index}>
               <div className='max-w-[270px] h-[300px] text-center cursor-pointer mt-12 p-2 bg-white bg-gradient-to-r hover:text-white hover:from-emerald-400 hover:to-teal-500 solution-card-wrapper rounded-2xl active:border-2 active:border-gopayra transition-all' data-aos="flip-left">
                 {/* thumbnail */}
                 <div>
