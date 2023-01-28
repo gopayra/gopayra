@@ -22,6 +22,11 @@ import ChooseYourBusiness from '../components/Home/ChooseYourBusiness';
 import HeroSection from '../components/Home/HeroSection';
 import CountUp from 'react-countup';
 import { useState } from 'react';
+import Analitics from '../components/Home/Analitics';
+import OurSolution from '../components/Home/OurSolution';
+import GopayraGuarantee from '../components/Home/GopayraGuarantee';
+import CustomGoPayraSlider from '../components/common/CustomGoPayraSlider';
+import OurTransport from '../components/Home/OurTransport';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -38,12 +43,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Navbar />
-
       <main>
         {/* hero section */}
         <HeroSection />
+
+        <Analitics />
+
+        <OurSolution />
+
+        <GopayraGuarantee />
+
         {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center h-full mt-6'>
@@ -101,8 +110,8 @@ export default function Home() {
           </section>
         </Container>
 
-        <Container>
           {/* showcase section 2 */}
+        {/* <Container>
           <section className='relative my-10 border-4 border-[#218578] rounded-lg p-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div className='w-full flex items-center justify-center gap-4' data-aos="fade-right">
@@ -123,12 +132,15 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </Container>
+        </Container> */}
         {/* Choose your business section*/}
         <ChooseYourBusiness />
 
         {/* Why choose our apps section */}
         <WhyChooseOurApps />
+
+        {/* Our transport section */}
+        <OurTransport />
 
         {/* Our CEO section */}
         <OurCEO />
@@ -146,8 +158,6 @@ export default function Home() {
         <SingingCompany />
 
       </main>
-
-      <Footer />
     </>
   )
 }

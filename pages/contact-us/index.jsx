@@ -16,8 +16,7 @@ const index = () => {
         <meta name="description" content="Go Payra Easy Solution" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <Navbar></Navbar>
+
       <main>
         {/* contacts us hero section */}
         <div className='bg-gopayra h-[676px]'>
@@ -38,7 +37,6 @@ const index = () => {
         <ContactusForm />
         <DownlaodOurApp />
       </main>
-      <Footer />
     </>
   );
 };
