@@ -10,7 +10,7 @@ import DownlaodOurApp from '../../components/common/DownlaodOurApp';
 import SingingCompany from '../../components/Home/SingingCompany';
 import Head from 'next/head';
 
-const index = () => {
+export default function index() {
   return (
     <>
       <Head>
@@ -29,5 +29,3 @@ const index = () => {
     </>
   );
 };
-
-export default index;

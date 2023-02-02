@@ -8,7 +8,7 @@ import Navbar from '../../components/common/Navbar2.0';
 import ContactusForm from '../../components/common/ContactusForm';
 import Head from 'next/head';
 
-const index = () => {
+export default function index() {
   return (
     <>
       <Head>
@@ -40,5 +40,3 @@ const index = () => {
     </>
   );
 };
-
-export default index;
