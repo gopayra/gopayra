@@ -27,6 +27,7 @@ import OurSolution from '../components/Home/OurSolution';
 import GopayraGuarantee from '../components/Home/GopayraGuarantee';
 import CustomGoPayraSlider from '../components/common/CustomGoPayraSlider';
 import OurTransport from '../components/Home/OurTransport';
+import HowItWorksVideo from '../components/Home/HowItWorksVideo';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -52,6 +53,8 @@ export default function Home() {
         <OurSolution />
 
         <GopayraGuarantee />
+
+        <HowItWorksVideo />
 
         {/* <section className='bg-no-repeat bg-center bg-opacity-10 bg-contain h-screen'>
           <Container>
