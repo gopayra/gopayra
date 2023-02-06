@@ -7,7 +7,7 @@ import Thumbnail from '../../assets/images/video-thumbnail.jpg';
 
 const HowItWorksVideo = () => {
   return (
-    <section>
+    <section className='mt-24'>
       <Container>
         <div className='map-bg-right h-full pb-20'>
           <HeadingText text="How it works" />

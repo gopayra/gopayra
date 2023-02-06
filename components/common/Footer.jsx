@@ -65,14 +65,14 @@ const Footer = () => {
           <div>
             <h3 className={styles.h3Style}>Solutions</h3>
             <ul className={styles.ulStyle}>
-              <li className={styles.liStyle}><Link href="solutions/supply-chain-management">Supply chain management</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/e-commerce">E-Commerce</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/food-delivery-system">Food delivery system</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/retail-and-FMCG">Retail and FMCG</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/courier-and-parcel">Courier & parcel</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/logistics-management">Logistics Management</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/industry-data-analysis">Industry data analysis</Link></li>
-              <li className={styles.liStyle}><Link href="solutions/fleet-and-driver-management">Fleet & Driver Management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/supply-chain-management">Supply chain management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/e-commerce">E-Commerce</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/food-delivery-system">Food delivery system</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/retail-and-FMCG">Retail and FMCG</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/courier-and-parcel">Courier & parcel</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/logistics-management">Logistics Management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/industry-data-analysis">Industry data analysis</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/fleet-and-driver-management">Fleet & Driver Management</Link></li>
             </ul>
           </div>
 

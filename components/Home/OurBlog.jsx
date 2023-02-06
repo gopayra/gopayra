@@ -22,18 +22,20 @@ const OurBlog = () => {
     animation: "fade-left"
   },]
   return (
-    <Container>
-      <HeadingText text="Our Blog" />
-      <SubHeadingText text="A Future-Proof Supply Chain Is The Future." />
+    <section className='mt-24'>
+      <Container>
+        <HeadingText text="Our Blog" />
+        <SubHeadingText text="A Future-Proof Supply Chain Is The Future." />
 
-      <div className='flex gap-4 justify-center flex-wrap lg:flex-nowrap my-10'>
-        {
-          cardData.map((item, index) => {
-            return <Card key={index} data={item} />
-          })
-        }
-      </div>
-    </Container>
+        <div className='flex gap-4 justify-center flex-wrap lg:flex-nowrap my-10'>
+          {
+            cardData.map((item, index) => {
+              return <Card key={index} data={item} />
+            })
+          }
+        </div>
+      </Container>
+    </section>
   );
 };
 

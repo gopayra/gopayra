@@ -50,17 +50,19 @@ const ChooseYourBusiness = () => {
     }
   ]
   return (
-    <Container>
-      <HeadingText text="Choose your Business" />
-      <div className='flex justify-center gap-2 flex-wrap my-12'>
-        {typesofBusiness.map((type, index) => {
-          return <div className='bg-gopayra hover:scale-105 transition-all text-center w-[270px] h-[220px] rounded-3xl flex flex-col gap-4 justify-center items-center mt-5' key={index} data-aos={type.animation}>
-            <Image src={type.icon} alt="" width={84} />
-            <h2 className='text-white text-2xl font-semibold'>{type.type}</h2>
-          </div>
-        })}
-      </div>
-    </Container>
+    <section className='mt-24'>
+      <Container>
+        <HeadingText text="Choose your Business" />
+        <div className='flex justify-center gap-2 flex-wrap my-12'>
+          {typesofBusiness.map((type, index) => {
+            return <div className='bg-gopayra hover:scale-105 transition-all text-center w-[270px] h-[220px] rounded-3xl flex flex-col gap-4 justify-center items-center mt-5' key={index} data-aos={type.animation}>
+              <Image src={type.icon} alt="" width={84} />
+              <h2 className='text-white text-2xl font-semibold'>{type.type}</h2>
+            </div>
+          })}
+        </div>
+      </Container>
+    </section>
   );
 };
 

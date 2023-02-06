@@ -32,11 +32,13 @@ const transportData = [{
 
 const OurTransport = () => {
   return (
-    <section className='mt-24 pb-32'>
+    <section className='mt-36 pb-32'>
       <HeadingText text="Our Transport" />
       <SubHeadingText text="We provide various type of vehicle option for your convenience" />
 
       <CustomGoPayraSlider transportData={transportData} />
+
+      
     </section>
   );
 };

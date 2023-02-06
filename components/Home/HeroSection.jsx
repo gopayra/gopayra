@@ -31,37 +31,43 @@ const HeroSection = () => {
     title: "Rent by day",
     description: "Hire our truck rent by day",
     icon: RentTripIcon,
-    iconLite: RentTripLiteIcon
+    iconLite: RentTripLiteIcon,
+    link: "/rent-by-day"
   }, {
     id: 2,
     title: "Rent by Trip",
     description: "Renting a Car/Truck/ Ambulance and driver for your multi-stop trips. ",
     icon: RentCarIcon,
-    iconLite: RentCarLiteIcon
+    iconLite: RentCarLiteIcon,
+    link: "/rent-by-trip"
   }, {
     id: 3,
     title: "Move my home",
     description: "Safety Packing, moving, and removal of goods takes a lot of effort when you do it all on your own.",
     icon: MoveMyMoveIcon,
-    iconLite: MoveMyMoveLiteIcon
+    iconLite: MoveMyMoveLiteIcon,
+    link: "/move-my-home"
   }, {
     id: 4,
     title: "Office & commercial move",
     description: "Quality Packing If you have some very expensive furniture at the office",
     icon: OfficeMoveIcon,
-    iconLite: OfficeMoveLiteIcon
+    iconLite: OfficeMoveLiteIcon,
+    link: "/office-and-commercial-move"
   }, {
     id: 5,
     title: "Courier & Parcel",
     description: "Only we have delivered the Fastest last mile Delivery. Real time door to door Delivery",
     icon: ParcelTruckIcon,
-    iconLite: ParcelTruckLiteIcon
+    iconLite: ParcelTruckLiteIcon,
+    link: "/courier-and-parcel"
   }, {
     id: 6,
     title: "Food Delivery",
     description: "Safety Packing, moving, and removal of goods takes a lot of effort when you do it all on your own.",
     icon: FoodDeliveryIcon,
-    iconLite: FoodDeliveryLiteIcon
+    iconLite: FoodDeliveryLiteIcon,
+    link: "/food-delivery"
   }];
   return (
     <section className='bg-gopayra bg-no-repeat bg-center bg-contain h-[800px]'>
