@@ -45,6 +45,13 @@ a {
   background-size: contain;
 }
 
+.map-bg-right {
+  background-image: url('../public/bangladesh.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 36rem 2rem;
+}
+
 .card svg{
   fill: linear-gradient(97.26deg, #34C57D 0%, #31AF94 100%);
 }

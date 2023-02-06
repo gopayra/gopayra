@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   console.log(route.pathname)
   return (
     <div className='content'>
-      {route.pathname === "/terms-and-conditions" || "/privacy-policy" ? <Navbar /> : <Navbar2 /> }
+      {route.pathname === "/terms-and-conditions" || route.pathname === "/privacy-policy" ? <Navbar /> : <Navbar2 /> }
       {children}
       <Footer />
     </div>
