@@ -12,11 +12,13 @@ const SolutionsPageLayout = ({solutionData}) => {
   const router = useRouter();
   const { solutionsName } = router.query;
   const filterPageData = solutionData.filter((item) => item.link === solutionsName);
+
+  console.log(filterPageData[0].title)
   
   return (
     <>
       <Head>
-        <title>GOPAYRA - {filterPageData[0].title}</title>
+        <title>GOPAYRA - Solutions Pages</title>
         <meta name="description" content="Go Payra Easy Solution" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
