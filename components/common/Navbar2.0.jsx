@@ -42,22 +42,22 @@ const solutionData = [{
 
 const ourServices = [{
   title: "Rent by day",
-  link: "/rent-by-day",
+  link: "/services/rent-by-day",
 }, {
   title: "Rent by Trip",
-  link: "/rent-by-trip",
+  link: "/services/rent-by-trip",
 }, {
   title: "Move my home",
-  link: "/move-my-home",
+  link: "/services/move-my-home",
 }, {
   title: "Office & commercial move",
-  link: "/office-and-commercial-move",
+  link: "/services/office-and-commercial-move",
 }, {
   title: "Courier & Parcel",
-  link: "/courier-and-parcel",
+  link: "/services/courier-and-parcel",
 }, {
   title: "Food Delivery",
-  link: "/food-delivery",
+  link: "/services/food-delivery",
 }];
 
 const Navbar = () => {
