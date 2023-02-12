@@ -87,8 +87,8 @@ const Navbar = () => {
       text: 'Solutions',
       subLinks: solutionData
     }, {
-      link: '/about',
-      text: 'About'
+      link: '/about-us',
+      text: 'About us'
     }, {
       link: '/services',
       text: 'Services',
