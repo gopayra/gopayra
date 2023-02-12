@@ -16,8 +16,8 @@ module.exports = {
       '/': { page: '/' },
     }
   },
-  // images: {
-  //   loader: 'akamai',
-  //   path: '/',
-  // },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
 }
