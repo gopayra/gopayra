@@ -8,8 +8,16 @@ module.exports = nextConfig
 
 module.exports = {
   trailingSlash: true,
-  images: {
-    loader: 'akamai',
-    path: '/',
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+    }
   },
+  // images: {
+  //   loader: 'akamai',
+  //   path: '/',
+  // },
 }
