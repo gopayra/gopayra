@@ -1,11 +1,15 @@
+import { useRouter } from 'next/router';
 import React from 'react';
+import { CloudLightning } from 'react-feather';
 import Footer from './Footer';
-import Navbar from './Navbar2.0';
+import Navbar from './Navbar';
+import Navbar2 from './Navbar2.0';
 
 const Layout = ({ children }) => {
+  const route = useRouter();
   return (
     <div className='content'>
-      <Navbar />
+      {route.pathname === "/terms-and-conditions" || route.pathname === "/privacy-policy" ? <Navbar /> : <Navbar2 /> }
       {children}
       <Footer />
     </div>

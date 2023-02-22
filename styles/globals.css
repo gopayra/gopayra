@@ -33,16 +33,23 @@ a {
 }
 
 .map-bg {
-  background-image: url('../public/bangladesh.webp');
+  background-image: url('https://gopayra.com/_next/static/media/bangladesh.ba02dcb1.webp');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .map-bg-white {
-  background-image: url('../public/bangladeshLite.webp');
+  background-image: url('https://gopayra.com/_next/static/media/bangladeshLite.4b132597.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+
+.map-bg-right {
+  background-image: url('../public/bangladesh.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 36rem 2rem;
 }
 
 .card svg{

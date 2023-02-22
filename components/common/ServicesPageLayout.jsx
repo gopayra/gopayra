@@ -8,10 +8,10 @@ import DownlaodOurApp from './DownlaodOurApp';
 import Thumbnail from '../../assets/images/supplyChain.png';
 import ShowCase from '../../assets/images/showcase1.png';
 
-const SolutionsPageLayout = ({solutionData}) => {
+const ServicesPageLayout = ({servicesData}) => {
   const router = useRouter();
-  const { solutionsName } = router.query;
-  const filterPageData = solutionData.filter((item) => item.link === solutionsName);
+  const { servicesName } = router.query;
+  const filterPageData = servicesData.filter((item) => item.link === servicesName);
 
   console.log(filterPageData[0].title)
   
@@ -50,4 +50,4 @@ const SolutionsPageLayout = ({solutionData}) => {
   );
 };
 
-export default SolutionsPageLayout;
+export default ServicesPageLayout;

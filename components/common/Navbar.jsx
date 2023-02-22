@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='cursor-pointer transition-all hover:scale-105'>
             <Link href="/">
-              <Image src={Logo} alt="brand-logo" height={60} width={60}></Image>
+              <Image src='https://gopayra.com/_next/static/media/lite-logo.6dc48795.png' alt="brand-logo" height={60} width={60}></Image>
             </Link>
           </div>
           {/* Nav items */}

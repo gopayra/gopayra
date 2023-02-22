@@ -8,7 +8,7 @@ import Footer from '../../components/common/Footer';
 import Head from 'next/head';
 
 
-const index = () => {
+export default function index () {
   return (
     <>
       <Head>
@@ -26,5 +26,3 @@ const index = () => {
     </>
   );
 };
-
-export default index;

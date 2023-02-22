@@ -9,6 +9,56 @@ import AppleAppStoreIcon from '../../assets/images/icons/appleAppStoreIcon.svg';
 import GooglePlayIcon from '../../assets/images/icons/googlePlayIcon.svg';
 import Image from 'next/image';
 import WhiteButton from '../UI/WhiteButton';
+import ChevronDown from '../../assets/images/icons/chevronArrow.svg';
+
+const solutionData = [{
+  title: "Supply chain management",
+  link: "/solutions/supply-chain-management"
+}, {
+  title: "E-Commerce",
+  link: "/solutions/e-commerce"
+}, {
+  title: "Food delivery system",
+  link: "/solutions/food-delivery-system"
+}, {
+  title: "Retail and FMCG",
+  link: "/solutions/retail-and-FMCG"
+}, {
+  title: "Courier & parcel",
+  link: "/solutions/courier-and-parcel"
+}, {
+  title: "Logistics Management",
+  link: "/solutions/logistics-management"
+}, {
+  title: "Industry data analysis",
+  link: "/solutions/industry-data-analysis"
+}, {
+  title: "All delivery system",
+  link: "/solutions/all-delivery-system"
+}, {
+  title: "Fleet & Driver Management",
+  link: "/solutions/fleet-and-driver-management"
+}]
+
+const ourServices = [{
+  title: "Rent by day",
+  link: "/services/rent-by-day",
+}, {
+  title: "Rent by Trip",
+  link: "/services/rent-by-trip",
+}, {
+  title: "Move my home",
+  link: "/services/move-my-home",
+}, {
+  title: "Office & commercial move",
+  link: "/services/office-and-commercial-move",
+}, {
+  title: "Courier & Parcel",
+  link: "/services/courier-and-parcel",
+}, {
+  title: "Food Delivery",
+  link: "/services/food-delivery",
+}];
 
 const Navbar = () => {
   const [MobileNav, setMobileNav] = useState(false);
@@ -16,7 +66,7 @@ const Navbar = () => {
 
   const ChangeBackground = () => {
     if (typeof window !== "undefined") {
-      if(window.scrollY >= 88) {
+      if (window.scrollY >= 88) {
         setNavBG(true);
       } else {
         setNavBG(false);
@@ -33,17 +83,26 @@ const Navbar = () => {
       link: '/',
       text: 'Home'
     }, {
-      link: '/solution',
-      text: 'Solution'
+      link: '/solutions',
+      text: 'Solutions',
+      subLinks: solutionData
     }, {
-      link: '/about',
-      text: 'About'
+      link: '/about-us',
+      text: 'About us'
     }, {
       link: '/services',
-      text: 'Services'
+      text: 'Services',
+      subLinks: ourServices
     }, {
       link: '/join-with-us',
-      text: 'Join with us'
+      text: 'Join with us',
+      subLinks: [{
+        title: "Become a partner",
+        link: "/become-a-partner"
+      }, {
+        title: "Become a rider",
+        link: "/become-a-rider"
+      }]
     }, {
       link: '/contact-us',
       text: 'Contact us'
@@ -60,9 +119,14 @@ const Navbar = () => {
             </Link>
           </div>
           {/* Nav items */}
-          <ul className='md:flex hidden items-center gap-8 font-medium text-white mt-4 md:mt-0'>
+          <div className='md:flex hidden items-center gap-8 font-medium text-white mt-4 md:mt-0'>
             {navItem.map((item, index) => <NavItem item={item} key={index} />)}
-          </ul>
+            {/* <li className='transition-all hover:text-emerald-300 hover:scale-110 active:text-emerald-200 active:scale-105 md:mt-0 mt-10'>
+              <Link href="/solution">Solution  </Link>
+              <Image src={ChevronDown} alt="" className='group-hover:rotate-180 ' />
+            </li> */}
+          </div>
+
 
           <WhiteButton text="Track Order" url="track-order" />
 
@@ -98,11 +162,29 @@ const Navbar = () => {
   );
 };
 
-export const NavItem = ({ item }) => {
+export const NavItem = ({ item }) => {  
   return (
-    <li className='transition-all hover:text-emerald-300 hover:scale-110 active:text-emerald-200 active:scale-105 md:mt-0 mt-10'>
-      <Link href={item.link}>{item.text}</Link>
-    </li>
+    <div className='group transition-all'>
+      <ul>
+        <li className='transition-all hover:text-emerald-300 hover:scale-110 active:text-emerald-200 active:scale-105 md:mt-0 mt-10 flex gap-2'>
+          <Link href={item.link}>{item.text}</Link>
+          {item.subLinks && <Image src={ChevronDown} alt="" className='group-hover:rotate-180' />}
+        </li>
+      </ul>
+
+      {item.subLinks
+        && <div className='fixed -ml-14 hidden group-hover:block py-2 bg-gopayra border-x border-b border-gopayraLight px-4 rounded-lg'>
+          <ul>
+            {/* {item.solutionData.map((item, index) => <li key={index}>{item.title}</li>)} */}
+            {item.subLinks.map((item, index) => {
+              return <li key={index} className='transition-all hover:text-emerald-300 hover:scale-110 active:text-emerald-200 active:scale-105 pt-4'>
+                <Link href={item.link}>{item.title}</Link>
+              </li>
+            })}
+          </ul>
+        </div>
+      }
+    </div>
   )
 }
 

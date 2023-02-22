@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import React from 'react';
 import SolutionsPageLayout from '../../components/common/SolutionsPageLayout';
 import Thumbnail from '../../assets/images/supplyChain.png';

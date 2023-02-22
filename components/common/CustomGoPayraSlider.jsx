@@ -16,8 +16,8 @@ const CustomGoPayraSlider = ({transportData}) => {
         }}
         breakpoints={{
           // when window width is >= 640px
-          450: {
-            width: 450,
+          640: {
+            width: 640,
             slidesPerView: 1,
           },
           // when window width is >= 768px

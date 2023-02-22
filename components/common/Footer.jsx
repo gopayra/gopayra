@@ -28,13 +28,13 @@ const Footer = () => {
             <p className='mt-5 leading-6 text-[#C9C9CA]'>Bringing automation in the logistics industry in Bangladesh through innovation.</p>
             {/* social links */}
             <div className='flex gap-4 items-center my-10'>
-              <div className='cursor-pointer transition-all hover:scale-110'><a href="/twitter"><div className={styles.iconStyle}>
+              <div className='cursor-pointer transition-all hover:scale-110'><a href="https://twitter.com/InfoGopayra"><div className={styles.iconStyle}>
                 <UilTwitter size="24" />
               </div></a></div>
               <div className='cursor-pointer transition-all hover:scale-110'><a href="https://www.facebook.com/GoPayraDelivery" target='blank'><div className={styles.iconStyle}>
                 <UilFacebookF size="24" />
               </div></a></div>
-              <div className='cursor-pointer transition-all hover:scale-110 text-white'><a href="/linkedin"><div className={styles.iconStyle}>
+              <div className='cursor-pointer transition-all hover:scale-110 text-white'><a href="/instagram"><div className={styles.iconStyle}>
                 <UilInstagram size="24" />
               </div></a></div>
               <div className='cursor-pointer transition-all hover:scale-110'><a href="/linkedin"><div className={styles.iconStyle}>
@@ -48,15 +48,15 @@ const Footer = () => {
             <ul className={styles.ulStyle}>
               <li className={styles.liStyle}><Link href="/about-us">About Us</Link></li>
               <li className={styles.liStyle}><Link href="/contact-us">Contact Us</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Blog</Link></li>
-              <li className={styles.liStyle}><Link href="/home">Careers</Link></li>
+              <li className={styles.liStyle}><Link href="/blog">Blog</Link></li>
+              <li className={styles.liStyle}><Link href="/careers">Careers</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className={styles.h3Style}>Support</h3>
             <ul className={styles.ulStyle}>
-              <li className={styles.liStyle}><Link href="/home">FAQ</Link></li>
+              <li className={styles.liStyle}><Link href="/faq">FAQ</Link></li>
               <li className={styles.liStyle}><Link href="/privacy-policy">Privacy & Policy</Link></li>
               <li className={styles.liStyle}><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
             </ul>
@@ -65,14 +65,14 @@ const Footer = () => {
           <div>
             <h3 className={styles.h3Style}>Solutions</h3>
             <ul className={styles.ulStyle}>
-              <li className={styles.liStyle}><Link href="solutions/supply-chain-management">Supply chain management</Link></li>
-              <li className={styles.liStyle}><Link href="/e-commerce">E-Commerce</Link></li>
-              <li className={styles.liStyle}><Link href="/food-delivery-system">Food delivery system</Link></li>
-              <li className={styles.liStyle}><Link href="/retail-and-FMCG">Retail and FMCG</Link></li>
-              <li className={styles.liStyle}><Link href="/courier-and-parcel">Courier & parcel</Link></li>
-              <li className={styles.liStyle}><Link href="/logistics-management">Logistics Management</Link></li>
-              <li className={styles.liStyle}><Link href="/industry-data-analysis">Industry data analysis</Link></li>
-              <li className={styles.liStyle}><Link href="/fleet-and-driver-management">Fleet & Driver Management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/supply-chain-management">Supply chain management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/e-commerce">E-Commerce</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/food-delivery-system">Food delivery system</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/retail-and-FMCG">Retail and FMCG</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/courier-and-parcel">Courier & parcel</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/logistics-management">Logistics Management</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/industry-data-analysis">Industry data analysis</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/fleet-and-driver-management">Fleet & Driver Management</Link></li>
             </ul>
           </div>
 
