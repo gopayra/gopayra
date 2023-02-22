@@ -10,22 +10,22 @@ import CountUp from 'react-countup';
 
 const Analitics = () => {
   const AnaliticsData = [{
-    icon: AvatarwithStarIcon,
+    icon: "https://gopayra.com/_next/static/media/avatarwithstar.8f986c56.svg",
     numbers: 8100,
     type: 'Happy Client',
     duration: 15
   }, {
-    icon: BookingIcon,
+    icon: 'https://gopayra.com/_next/static/media/bookingIcon.5ef76c05.svg',
     numbers: 1500,
     type: 'Booking',
     duration: 30
   }, {
-    icon: TruckIcon,
+    icon: 'https://gopayra.com/_next/static/media/trucksIcon.63b53bc3.svg',
     numbers: 500,
     type: 'Trucks',
     duration: 50
   }, {
-    icon: DriversIcon,
+    icon: 'https://gopayra.com/_next/static/media/driversIcon.b52ea6f0.svg',
     numbers: 1000,
     type: 'Drivers',
     duration: 60
@@ -38,7 +38,7 @@ const Analitics = () => {
             AnaliticsData.map((item, index) => {
               return <div className='flex gap-6 items-center h-full w-72' key={index}>
                 <div className='bg-[#CDE2DF] rounded-[20px] px-[1.313em] py-[1.094em] w-[90px] h-[90px]'>
-                  <Image src={item.icon} alt="" />
+                  <Image src={item.icon} alt="" width={48} height={48}/>
                 </div>
                 <div className='text-white'>
                   <h1 className='text-heading font-semibold w-[125px]'><CountUp start={item.numbers - 40} end={item.numbers} duration={item.duration} />+ </h1>

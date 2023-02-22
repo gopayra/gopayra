@@ -16,34 +16,34 @@ import HistoricalIcon from '../../assets/images/icons/whyChooseOurAppsIcons/hist
 
 const WhyChooseOurApps = () => {
   const highlights = [{
-    icon: MultipointIcon,
+    icon: 'https://gopayra.com/_next/static/media/multipoint.12d46b92.svg',
     points: "Multipoint Delivery"
   }, {
-    icon: LiveShipmentIcon,
+    icon: 'https://gopayra.com/_next/static/media/liveShipment.f651cd6a.svg',
     points: "Live Shipment Status Updates"
   }, {
-    icon: IncreasesIcon,
+    icon: 'https://gopayra.com/_next/static/media/increases.2ac08e5b.svg',
     points: "Increases Productivity"
   }, {
-    icon: TopicalIcon,
+    icon: 'https://gopayra.com/_next/static/media/topical.4e565c75.svg',
     points: "Torical data"
   }, {
-    icon: ImprovesIcon,
+    icon: 'https://gopayra.com/_next/static/media/improves.c6d7e265.svg',
     points: "Improves Customer Satisfaction"
   }, {
-    icon: RecusesIcon,
+    icon: 'https://gopayra.com/_next/static/media/reduces.4c0f780a.svg',
     points: "Reduces Fuel Costs"
   }, {
-    icon: ReducesUnathorisedIcon,
+    icon: 'https://gopayra.com/_next/static/media/reducesUnathorised.13da5cf0.svg',
     points: "Reduces Unauthorised Use and Aids in Theft Recovery"
   }, {
-    icon: OptimisesIcon,
+    icon: 'https://gopayra.com/_next/static/media/optimises.0826c86b.svg',
     points: "Optimises routing"
   }, {
-    icon: ProofIcon,
+    icon: 'https://gopayra.com/_next/static/media/proof.39a5108d.svg',
     points: "Proof Delivery"
   }, {
-    icon: HistoricalIcon,
+    icon: 'https://gopayra.com/_next/static/media/historical.733ae419.svg',
     points: "Historical data"
   }];
   return (
@@ -55,7 +55,7 @@ const WhyChooseOurApps = () => {
           {highlights.map((highlight, index) => {
             return <div className='rounded-2xl border border-liteBorder pt-4 w-[219px] h-[120px] text-center mt-3 hover:border-gopayra hover:scale-105 transition-all cursor-pointer' key={index}>
               <div className='bg-gopayra w-[32px] h-[32px] mx-auto rounded-full flex justify-center items-center'>
-                <Image src={highlight.icon} alt="" />
+                <Image src={highlight.icon} alt="" width={18} height={18} />
               </div>
               <p className='font-medium mt-2'>{highlight.points}</p>
             </div>

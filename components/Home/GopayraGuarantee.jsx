@@ -16,22 +16,22 @@ const GopayraGuarantee = () => {
         <HeadingText text="Gopayra guarantee" />
         <div className='grid grid-cols-2 md:flex justify-center gap-8 md:flex-row md:justify-between items-center mt-12'>
           <div className={styles}>
-            <Image src={AvailabilityIcon} alt="" data-aos="flip-up"/>
+            <Image src='https://gopayra.com/_next/static/media/availabilityIcon.4267d152.svg' alt="" data-aos="flip-up" width={60} height={60} />
             <h3 className='text-xl font-semibold'>100% <br /> Availability</h3>
           </div>
 
           <div className={styles}>
-            <Image src={LowestRatesIcon} alt="" data-aos="flip-up"/>
+            <Image src='https://gopayra.com/_next/static/media/lowestRatesIcon.058f3e95.svg' alt="" data-aos="flip-up" width={60} height={60} />
             <h3 className='text-xl font-semibold'>Lowest <br /> Rates</h3>
           </div>
 
           <div className={styles}>
-            <Image src={CustomerSupportIcon} alt="" data-aos="flip-up"/>
+            <Image src='https://gopayra.com/_next/static/media/customerSupportIcon.5eb0fb50.svg' alt="" data-aos="flip-up" width={60} height={60} />
             <h3 className='text-xl font-semibold'>24x7 <br /> Support</h3>
           </div>
 
           <div className={styles}>
-            <Image src={DataAnalyticsIcon} alt="" data-aos="flip-up"/>
+            <Image src='https://gopayra.com/_next/static/media/dataAnalyticsIcon.db1ef6e0.svg' alt="" data-aos="flip-up" width={60} height={60} />
             <h3 className='text-xl font-semibold'>Data Analytics <br /> & Reporting</h3>
           </div>
         </div>
