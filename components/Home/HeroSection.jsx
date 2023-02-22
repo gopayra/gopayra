@@ -31,42 +31,42 @@ const HeroSection = () => {
     title: "Rent by day",
     description: "Hire our truck rent by day",
     icon: RentTripIcon,
-    iconLite: RentTripLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/rent-by-trip-lite.42537366.svg',
     link: "/services/rent-by-day"
   }, {
     id: 2,
     title: "Rent by Trip",
     description: "Renting a Car/Truck/ Ambulance and driver for your multi-stop trips. ",
     icon: RentCarIcon,
-    iconLite: RentCarLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/rent-by-day-lite.707f19de.svg',
     link: "/services/rent-by-trip"
   }, {
     id: 3,
     title: "Move my home",
     description: "Safety Packing, moving, and removal of goods takes a lot of effort when you do it all on your own.",
     icon: MoveMyMoveIcon,
-    iconLite: MoveMyMoveLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/move-my-home-lite.16e3df59.svg',
     link: "/services/move-my-home"
   }, {
     id: 4,
     title: "Office & commercial move",
     description: "Quality Packing If you have some very expensive furniture at the office",
     icon: OfficeMoveIcon,
-    iconLite: OfficeMoveLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/office-move-lite.187641e0.svg',
     link: "/services/office-and-commercial-move"
   }, {
     id: 5,
     title: "Courier & Parcel",
     description: "Only we have delivered the Fastest last mile Delivery. Real time door to door Delivery",
     icon: ParcelTruckIcon,
-    iconLite: ParcelTruckLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/parcel-truck-lite.6b0fd328.svg',
     link: "/services/courier-and-parcel"
   }, {
     id: 6,
     title: "Food Delivery",
     description: "Safety Packing, moving, and removal of goods takes a lot of effort when you do it all on your own.",
     icon: FoodDeliveryIcon,
-    iconLite: FoodDeliveryLiteIcon,
+    iconLite: 'https://gopayra.com/_next/static/media/food-delivery-lite.84b9838f.svg',
     link: "/services/food-delivery"
   }];
   return (
@@ -98,10 +98,10 @@ const HeroSection = () => {
 
           <div className='hidden map-bg-white h-full md:flex justify-center items-center'>
             <div className='flex'>
-              <Image src={TruckImage} alt="" data-aos="zoom-in" />
+              <Image src="https://gopayra.com/_next/static/media/hero-truck.78d44869.webp" alt="" data-aos="zoom-in" width={569} height={411}/>
             </div>
             <div className='absolute top-[4.6em] -mr-[16rem]'>
-              <Image src={CourierManImage} alt="" data-aos="fade-left" />
+              <Image src="https://gopayra.com/_next/static/media/courier-man.9e70a430.webp" alt="" data-aos="fade-left" height={726} width={537}/>
             </div>
           </div>
 

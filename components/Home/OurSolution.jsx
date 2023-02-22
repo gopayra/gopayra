@@ -17,47 +17,47 @@ import Link from 'next/link';
 const OurSolution = () => {
 
   const solutionData = [{
-    Thumbnail: Thumbnail,
+    Thumbnail: 'https://gopayra.com/_next/static/media/card-thumbnail.d246906f.webp',
     title: "Supply chain management",
     description: 'Only Gopayra company give you Supply management system : supply planning',
     link: "/supply-chain-management"
   }, {
-    Thumbnail: Thumbnail2,
+    Thumbnail: 'https://gopayra.com/_next/static/media/allDeliverySystem.49218412.webp',
     title: "E-Commerce",
     description: 'Our Logistics E-Commerce Delivery provider to ensure consistent, secure',
     link: "/e-commerce"
   }, {
-    Thumbnail: Thumbnail3,
+    Thumbnail: 'https://gopayra.com/_next/static/media/industryDataAnalysis.faca6891.webp',
     title: "Food delivery system",
     description: 'Being a grown-up is the best, you don’t need permission to have dessert for dinner',
     link: "/food-delivery-system"
   }, {
-    Thumbnail: Thumbnail4,
+    Thumbnail: 'https://gopayra.com/_next/static/media/logisticmanagement.87ea6e3d.webp',
     title: "Retail and FMCG",
     description: 'Only Gopayra company give you Supply management system : supply planning Our Logistics E-Commerce',
     link: "/retail-and-FMCG"
   }, {
-    Thumbnail: Thumbnail5,
+    Thumbnail: 'https://gopayra.com/_next/static/media/courier-parcel.d21fba9d.webp',
     title: "Courier & parcel",
     description: 'Only we have delivered the Fastest last mile Delivery. Real time door to door Delivery',
     link: "/courier-and-parcel"
   }, {
-    Thumbnail: Thumbnail6,
+    Thumbnail: 'https://gopayra.com/_next/static/media/retailandfmcg.bbc908a7.webp',
     title: "Logistics Management",
     description: 'What are the benefits of Last-Mile Shipment visibility? There are numerous benefits',
     link: "/logistics-management"
   }, {
-    Thumbnail: Thumbnail7,
+    Thumbnail: 'https://gopayra.com/_next/static/media/foodDelivery.0faabffe.webp',
     title: "Industry data analysis",
     description: 'we give you big data analysis and supply chain management systems. Through which',
     link: "/industry-data-analysis"
   }, {
-    Thumbnail: Thumbnail8,
+    Thumbnail: 'https://gopayra.com/_next/static/media/ecommerce.91a1469f.webp',
     title: "All delivery system",
     description: 'According to one retailer, speed of delivery is the most important metric that drives loyalty. ',
     link: "/all-delivery-system"
   }, {
-    Thumbnail: Thumbnail9,
+    Thumbnail: 'https://gopayra.com/_next/static/media/fleetandDrivermng.28e3ca54.webp',
     title: "Fleet & Driver Management",
     description: "Fleet management should live in your pocket. Gopayra's web and mobile...",
     link: "/fleet-and-driver-management"
@@ -74,7 +74,7 @@ const OurSolution = () => {
               <div className='max-w-[270px] h-[300px] text-center cursor-pointer mt-12 p-2 bg-white bg-gradient-to-r hover:text-white hover:from-emerald-400 hover:to-teal-500 solution-card-wrapper rounded-2xl active:border-2 active:border-gopayra transition-all' data-aos="flip-left">
                 {/* thumbnail */}
                 <div>
-                  <Image src={data.Thumbnail} alt="" />
+                  <Image src={data.Thumbnail} alt="" width={254} height={137} />
                 </div>
                 {/* content */}
                 <h2 className='text-xl font-semibold mt-4 mb-2'>{data.title}</h2>
