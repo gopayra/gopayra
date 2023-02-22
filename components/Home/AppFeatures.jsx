@@ -22,34 +22,34 @@ Customers can view their orders on a map interface with real-time location of th
       <div className='flex items-center justify-around h-[572px] pt-16'>
         <div className='flex flex-col gap-12' data-aos="fade-right">
           <div>
-            <Image src={Deliveries} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/fast-delivery.a446865c.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>All Deliveries in One App</h3>
           </div>
           <div>
-            <Image src={Tracking} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/tracking.a554f5b3.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>Tracking</h3>
           </div>
           <div>
-            <Image src={MultiPoint} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/pins.a0dbb1f3.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>Mulit-point Deliveries</h3>
           </div>
         </div>
 
         <div className='p-14 hidden md:block' data-aos="zoom-in">
-          <Image src={Map} alt="" />
+          <Image src='https://gopayra.com/_next/static/media/bangladesh.027fea3e.png' alt="" width={477} height={553} />
         </div>
 
         <div className='flex flex-col gap-12' data-aos="fade-left">
           <div>
-            <Image src={Schedule} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/schedule.70e99777.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>Schedule Pickup</h3>
           </div>
           <div>
-            <Image src={ResendOrders} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/resend-orders.3ba25108.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>Resend Orders</h3>
           </div>
           <div>
-            <Image src={Address} alt="" />
+            <Image src='https://gopayra.com/_next/static/media/address.90ea2387.svg' alt="" width={48} height={48} />
             <h3 className='text-xl font-semibold mt-3'>Saved Address</h3>
           </div>
         </div>
