@@ -16,8 +16,19 @@ module.exports = {
   //     '/': { page: '/' },
   //   }
   // },
+  // images: {
+  //   loader: 'akamai',
+  //   // path: 'https://gopayra.com',
+  //   path: '/',
+  // },
   images: {
-    loader: 'akamai',
-    path: 'https://gopayra.com',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'gopayra.com',
+        port: '',
+        pathname: '/_next/static/media/**',
+      },
+    ],
   },
 }
