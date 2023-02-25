@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomGoPayraSlider from '../common/CustomGoPayraSlider';
+import CustomGoPayraSlider from './CustomGoPayraSlider';
 import HeadingText from '../UI/HeadingText';
 import SubHeadingText from '../UI/SubHeadingText';
 import Bike from '../../assets/images/bike.png';

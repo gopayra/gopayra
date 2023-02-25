@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Container from '../common/Container';
+import Container from './Container';
 import HeadingText from '../UI/HeadingText';
 import SubHeadingText from '../UI/SubHeadingText';
 import Thumbnail from '../../assets/images/video-thumbnail.jpg';
