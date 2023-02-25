@@ -8,7 +8,7 @@ import Location from '../../assets/images/icons/location.svg';
 import Mobile from '../../assets/images/icons/mobile.svg';
 import Email from '../../assets/images/icons/email.svg';
 import Container from './Container';
-import { UilTwitter, UilFacebookF, UilInstagram, UilYoutube } from '@iconscout/react-unicons'
+import { UilTwitter, UilFacebookF, UilInstagram, UilYoutube } from '@iconscout/react-unicons';
 
 const Footer = () => {
   const styles = {
