@@ -16,8 +16,14 @@ module.exports = {
   //     '/': { page: '/' },
   //   }
   // },
-  images: {
-    loader: 'akamai',
-    path: 'https://gopayra.com',
-  },
+  // images: {
+  //   loader: 'akamai',
+  //   // path: 'https://gopayra.com',
+  //   path: '/',
+  // },
+  experimental: {
+    images: {
+      unoptimized: true
+    }
+  }
 }

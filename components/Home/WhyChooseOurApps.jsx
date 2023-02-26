@@ -16,34 +16,34 @@ import HistoricalIcon from '../../assets/images/icons/whyChooseOurAppsIcons/hist
 
 const WhyChooseOurApps = () => {
   const highlights = [{
-    icon: 'https://gopayra.com/_next/static/media/multipoint.12d46b92.svg',
+    icon: MultipointIcon,
     points: "Multipoint Delivery"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/liveShipment.f651cd6a.svg',
+    icon: LiveShipmentIcon,
     points: "Live Shipment Status Updates"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/increases.2ac08e5b.svg',
+    icon: IncreasesIcon,
     points: "Increases Productivity"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/topical.4e565c75.svg',
+    icon: TopicalIcon,
     points: "Torical data"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/improves.c6d7e265.svg',
+    icon: ImprovesIcon,
     points: "Improves Customer Satisfaction"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/reduces.4c0f780a.svg',
+    icon: RecusesIcon,
     points: "Reduces Fuel Costs"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/reducesUnathorised.13da5cf0.svg',
+    icon: ReducesUnathorisedIcon,
     points: "Reduces Unauthorised Use and Aids in Theft Recovery"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/optimises.0826c86b.svg',
+    icon: OptimisesIcon,
     points: "Optimises routing"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/proof.39a5108d.svg',
+    icon: ProofIcon,
     points: "Proof Delivery"
   }, {
-    icon: 'https://gopayra.com/_next/static/media/historical.733ae419.svg',
+    icon: HistoricalIcon,
     points: "Historical data"
   }];
   return (

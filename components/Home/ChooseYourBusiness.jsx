@@ -17,35 +17,35 @@ const ChooseYourBusiness = () => {
   const typesofBusiness = [
     {
       type: "FMCG",
-      icon: 'https://gopayra.com/_next/static/media/fmcg.b146f3c9.svg',
+      icon: FMCGIcon,
       animation: "fade-left"
     }, {
       type: "Petrochemicals",
-      icon: 'https://gopayra.com/_next/static/media/petrochemical.3446dd4b.svg',
+      icon: PetrochemicalIcon,
       animation: "fade-left"
     }, {
       type: "Construction",
-      icon: 'https://gopayra.com/_next/static/media/construction.17ce6f26.svg',
+      icon: ConstructionIcon,
       animation: "fade-left"
     }, {
       type: "Furniture",
-      icon: 'https://gopayra.com/_next/static/media/furniture.abcfe37b.svg',
+      icon: FurnitureIcon,
       animation: "fade-left"
     }, {
       type: "Steel",
-      icon: 'https://gopayra.com/_next/static/media/steel.39e606c2.svg',
+      icon: SteelIcon,
       animation: "fade-right"
     }, {
       type: "Cement",
-      icon: 'https://gopayra.com/_next/static/media/cement.e874f978.svg',
+      icon: CementIcon,
       animation: "fade-right"
     }, {
       type: "ConsumerDurables",
-      icon: 'https://gopayra.com/_next/static/media/consumer-durables.6455a9bc.svg',
+      icon: ConsumerDurablesIcon,
       animation: "fade-right"
     }, {
       type: "OilandGas",
-      icon: 'https://gopayra.com/_next/static/media/oilandgas.5fe6ee79.svg',
+      icon: OilandGasIcon,
       animation: "fade-right"
     }
   ]

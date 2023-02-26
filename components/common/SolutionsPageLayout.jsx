@@ -30,7 +30,7 @@ const SolutionsPageLayout = ({ solutionData }) => {
         <SupplyChainManagement />
 
         {/* contact us form section */}
-        <DownlaodOurApp />
+        {/* <DownlaodOurApp /> */}
       </main>
     </>
   );

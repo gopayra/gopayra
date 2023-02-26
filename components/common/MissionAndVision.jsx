@@ -8,7 +8,7 @@ const MissionAndVision = () => {
     <Container>
       <div className='grid grid-cols-2 items-center'>
         <div className='flex'>
-          <Image src='https://gopayra.com/_next/static/media/missionandvission-thumbnail.2cc4662c.png' alt="" width={456} height={500}/>
+          <Image src={Thumbnail} alt="" width={456} height={500}/>
         </div>
         <div>
           <div>
