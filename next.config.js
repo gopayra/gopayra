@@ -21,14 +21,9 @@ module.exports = {
   //   // path: 'https://gopayra.com',
   //   path: '/',
   // },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'gopayra.com',
-        port: '',
-        pathname: '/_next/static/media/**',
-      },
-    ],
-  },
+  experimental: {
+    images: {
+      unoptimized: true
+    }
+  }
 }
