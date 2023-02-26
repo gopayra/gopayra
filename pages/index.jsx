@@ -26,8 +26,8 @@ import Analitics from '../components/Home/Analitics';
 import OurSolution from '../components/Home/OurSolution';
 import GopayraGuarantee from '../components/Home/GopayraGuarantee';
 import CustomGoPayraSlider from '../components/common/CustomGoPayraSlider';
-import OurTransport from '../components/Home/OurTransport';
-import HowItWorksVideo from '../components/Home/HowItWorksVideo';
+import OurTransport from '../components/common/OurTransport';
+import HowItWorksVideo from '../components/common/HowItWorksVideo';
 
 export default function Home() {
   const [loading, setLoading] = useState(false);

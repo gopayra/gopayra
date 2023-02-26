@@ -10,22 +10,22 @@ import CountUp from 'react-countup';
 
 const Analitics = () => {
   const AnaliticsData = [{
-    icon: "https://gopayra.com/_next/static/media/avatarwithstar.8f986c56.svg",
+    icon: AvatarwithStarIcon,
     numbers: 8100,
     type: 'Happy Client',
     duration: 15
   }, {
-    icon: 'https://gopayra.com/_next/static/media/bookingIcon.5ef76c05.svg',
+    icon: BookingIcon,
     numbers: 1500,
     type: 'Booking',
     duration: 30
   }, {
-    icon: 'https://gopayra.com/_next/static/media/trucksIcon.63b53bc3.svg',
+    icon: TruckIcon,
     numbers: 500,
     type: 'Trucks',
     duration: 50
   }, {
-    icon: 'https://gopayra.com/_next/static/media/driversIcon.b52ea6f0.svg',
+    icon: DriversIcon,
     numbers: 1000,
     type: 'Drivers',
     duration: 60
