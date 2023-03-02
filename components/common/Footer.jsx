@@ -72,6 +72,7 @@ const Footer = () => {
               <li className={styles.liStyle}><Link href="/solutions/courier-and-parcel">Courier & parcel</Link></li>
               <li className={styles.liStyle}><Link href="/solutions/logistics-management">Logistics Management</Link></li>
               <li className={styles.liStyle}><Link href="/solutions/industry-data-analysis">Industry data analysis</Link></li>
+              <li className={styles.liStyle}><Link href="/solutions/all-delivery-system">All Delivery System</Link></li>
               <li className={styles.liStyle}><Link href="/solutions/fleet-and-driver-management">Fleet & Driver Management</Link></li>
             </ul>
           </div>

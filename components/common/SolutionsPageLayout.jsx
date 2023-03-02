@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { Children, useState } from 'react';
-import Container from './Container';
+import React from 'react';
 import DownlaodOurApp from './DownlaodOurApp';
-import Thumbnail from '../../assets/images/supplyChain.png';
 import HeroSectionCommon from './HeroSectionCommon';
 import SupplyChainManagement from '../SolutionsPages/SupplyChainManagement';
+import EcommerceLogiticsSolutions from '../SolutionsPages/EcommerceLogiticsSolutions';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -25,9 +22,11 @@ const SolutionsPageLayout = ({ solutionData }) => {
 
       <main>
         {/* hero section */}
-        <HeroSectionCommon title={filterPageData[0].title} description={filterPageData[0].description} Thumbnail={Thumbnail} />
+        <HeroSectionCommon title={filterPageData[0].title} description={filterPageData[0].description} Thumbnail={filterPageData[0].Thumbnail} />
 
         {filterPageData[0].title === "Supply chain management" && <SupplyChainManagement />}
+
+        {filterPageData[0].title === "E-commerce Logistics Solutions" && <EcommerceLogiticsSolutions />}
 
         {/* contact us form section */}
         <DownlaodOurApp />

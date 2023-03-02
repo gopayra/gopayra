@@ -27,8 +27,8 @@ const SupplyChainManagement = () => {
       <GridLayout
         heading="How Supply Chain Visibility Works"
         description="A Better Way to Manage Your Supply Chain. Access your supply chain data, reconcile invoices and identify gaps in real time to scale your business."
-        thumbnail={SupplyVisibility}>
-      </GridLayout>
+        thumbnail={SupplyVisibility} />
+      
 
 
       {/* How supply chain works */}

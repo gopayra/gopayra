@@ -7,6 +7,8 @@ const HeroSectionCommon = ({ title, description, Thumbnail }) => {
     <div className='bg-gopayra h-[676px]'>
       <Container>
         <div className='h-full grid grid-cols-1 md:grid-cols-2 items-center mt-20 pb-20'>
+
+          {/* right column */}
           <div className='my-auto text-white' data-aos="fade-right">
             <h1 className='text-6xl font-bold'>{title}</h1>
             <p className='text-lg mt-4'>{description}</p>
@@ -27,12 +29,12 @@ const HeroSectionCommon = ({ title, description, Thumbnail }) => {
               </div>
             </div>
           </div>
+
+          {/* left column */}
           <div className='justify-center map-bg-white h-full lg:flex items-center ml-12 hidden' data-aos="fade-left">
             <Image src={Thumbnail} alt="" />
           </div>
         </div>
-
-
       </Container>
     </div>
   );
