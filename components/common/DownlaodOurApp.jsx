@@ -21,7 +21,7 @@ const DownlaodOurApp = () => {
     }
   ]
   return (
-    <section className='my-10 bg-slate-100 shadow-lg' id="download">
+    <section className='mt-10 bg-slate-100 shadow-lg' id="download">
       <Container>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 items-center pt-5'>
           <div>

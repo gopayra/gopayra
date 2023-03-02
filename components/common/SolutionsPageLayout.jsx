@@ -7,7 +7,7 @@ import Container from './Container';
 import DownlaodOurApp from './DownlaodOurApp';
 import Thumbnail from '../../assets/images/supplyChain.png';
 import HeroSectionCommon from './HeroSectionCommon';
-import SupplyChainManagement from '../SupplyChainManagement/SupplyChainManagement';
+import SupplyChainManagement from '../SolutionsPages/SupplyChainManagement';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -27,10 +27,10 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {/* hero section */}
         <HeroSectionCommon title={filterPageData[0].title} description={filterPageData[0].description} Thumbnail={Thumbnail} />
 
-        <SupplyChainManagement />
+        {filterPageData[0].title === "Supply chain management" && <SupplyChainManagement />}
 
         {/* contact us form section */}
-        {/* <DownlaodOurApp /> */}
+        <DownlaodOurApp />
       </main>
     </>
   );
