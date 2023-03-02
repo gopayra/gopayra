@@ -9,15 +9,15 @@ const GridLayout = ({ heading, description, thumbnail, leftImage }) => {
       <Container>
         <div className='h-full grid grid-cols-1 md:grid-cols-2 items-center mt-8 gap-8'>
 
-          {leftImage && <div>
+          {leftImage && <div data-aos="fade-right">
             <Image src={thumbnail} alt="" />
           </div>}
-          <div>
+          <div data-aos="zoom-in">
             {heading && <h1 className='text-heading font-semibold'>{heading}</h1>}
             <p className='text-goDesc'>{description}</p>
           </div>
           {!leftImage && <div>
-            <Image src={thumbnail} alt="" />
+            <Image src={thumbnail} alt="" data-aos="fade-left"/>
           </div>}
         </div>
       </Container>

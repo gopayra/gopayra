@@ -9,8 +9,8 @@ const solutionData = [{
   link: "supply-chain-management"
 }, {
   Thumbnail: "Thumbnail2",
-  title: "E-Commerce",
-  description: 'Our Logistics E-Commerce Delivery provider to ensure consistent, secure',
+  title: "E-commerce Logistics Solutions",
+  description: 'Work with the best logistics platform and Hassle Free Pickup and delivery Operations',
   link: "e-commerce"
 }, {
   Thumbnail: "Thumbnail3",
