@@ -5,6 +5,7 @@ import DownlaodOurApp from './DownlaodOurApp';
 import HeroSectionCommon from './HeroSectionCommon';
 import SupplyChainManagement from '../SolutionsPages/SupplyChainManagement';
 import EcommerceLogiticsSolutions from '../SolutionsPages/EcommerceLogiticsSolutions';
+import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -27,6 +28,8 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {filterPageData[0].title === "Supply chain management" && <SupplyChainManagement />}
 
         {filterPageData[0].title === "E-commerce Logistics Solutions" && <EcommerceLogiticsSolutions />}
+
+        {filterPageData[0].title === "Food delivery system" && <FoodDeliverySystem />}
 
         {/* contact us form section */}
         <DownlaodOurApp />

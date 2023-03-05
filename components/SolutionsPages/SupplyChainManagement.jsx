@@ -13,12 +13,20 @@ import supplyImage2 from '../../assets/images/solutionsPages/supplyImage2.webp'
 import ShowCase from '../../assets/images/showcase1.png';
 import HeadingText from '../UI/HeadingText';
 import SubHeadingText from '../UI/SubHeadingText';
+import ThreeFeatureCards from '../common/ThreeFeatureCards';
 
 const SupplyChainManagement = () => {
-  const styles = {
-    div: 'w-[370px] h-[196px] border border-[#CDE2DF] rounded-3xl flex justify-center items-center',
-    h3: 'text-2xl font-semibold whitespace-nowrap mt-4'
-  }
+  const cardData = [
+    {
+      icon: OrderManagement,
+      text: 'Order Management'
+    }, {
+      icon: ProductManagement,
+      text: 'Product Management'
+    }, {
+      icon: LogisticsVisibility,
+      text: 'Logistics Visibility'
+    }]
   return (
     <>
       <div className='flex justify-center my-20' data-aos="zoom-in">
@@ -27,37 +35,11 @@ const SupplyChainManagement = () => {
       <GridLayout
         heading="How Supply Chain Visibility Works"
         description="A Better Way to Manage Your Supply Chain. Access your supply chain data, reconcile invoices and identify gaps in real time to scale your business."
-        thumbnail={SupplyVisibility} />
-      
-
+        thumbnail={SupplyVisibility}
+      />
 
       {/* How supply chain works */}
-      <section>
-        <Container>
-          <div className='flex gap-4 justify-center my-20 items-center flex-wrap md:flex-nowrap md:justify-between'>
-            <div className={styles.div} data-aos="fade-right">
-              <div className='text-center'>
-                <Image src={OrderManagement} alt="" />
-                <h3 className={styles.h3}>Order Management</h3>
-              </div>
-            </div>
-
-            <div className={styles.div} data-aos="zoom-in">
-              <div className='text-center'>
-                <Image src={ProductManagement} alt="" />
-                <h3 className={styles.h3}>Production Management</h3>
-              </div>
-            </div>
-
-            <div className={styles.div} data-aos="fade-left">
-              <div className='text-center'>
-                <Image src={LogisticsVisibility} alt="" />
-                <h3 className={styles.h3}>Logistics Visibility</h3>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <ThreeFeatureCards cardData={cardData} fontSize="2xl" />
 
       {/* Core Capabilities Of Gopayra */}
       <section>
@@ -98,17 +80,15 @@ const SupplyChainManagement = () => {
         </Container>
       </section>
 
-      <section>
-        <Container>
-          <HeadingText text='Supply Chain Management' />
-          <SubHeadingText text='We help shippers, carriers and logistics service providers to gain supply chain visibility.' />
-          <GridLayout
-            description="Manage your supply chain with precision and efficiency, especially in the face of disruptions. Improve inventory predictability, reduce excess fees like demurrage and detention, and exceed customer expectations."
-            thumbnail={supplyImage2}
-            leftImage={true}
-          />
-        </Container>
-      </section>
+      <Container>
+        <HeadingText text='Supply Chain Management' />
+        <SubHeadingText text='We help shippers, carriers and logistics service providers to gain supply chain visibility.' />
+      </Container>
+      <GridLayout
+        description="Manage your supply chain with precision and efficiency, especially in the face of disruptions. Improve inventory predictability, reduce excess fees like demurrage and detention, and exceed customer expectations."
+        thumbnail={supplyImage2}
+        leftImage={true}
+      />
     </>
   );
 };
