@@ -8,6 +8,7 @@ import EcommerceLogiticsSolutions from '../SolutionsPages/EcommerceLogiticsSolut
 import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
 import RetailAndFMCG from '../SolutionsPages/RetailAndFMCG';
 import CourierAndParcel from '../SolutionsPages/CourierAndParcel';
+import LogisticsManagement from '../SolutionsPages/LogisticsManagement';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -36,6 +37,8 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {filterPageData[0].title === "Retail and FMCG" && <RetailAndFMCG />}
 
         {filterPageData[0].title === "Courier & parcel" && <CourierAndParcel />}
+
+        {filterPageData[0].title === "Logistics Management" && <LogisticsManagement />}
 
         {/* contact us form section */}
         <DownlaodOurApp />
