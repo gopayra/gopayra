@@ -6,6 +6,8 @@ import HeroSectionCommon from './HeroSectionCommon';
 import SupplyChainManagement from '../SolutionsPages/SupplyChainManagement';
 import EcommerceLogiticsSolutions from '../SolutionsPages/EcommerceLogiticsSolutions';
 import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
+import RetailAndFMCG from '../SolutionsPages/RetailAndFMCG';
+import CourierAndParcel from '../SolutionsPages/CourierAndParcel';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -30,6 +32,10 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {filterPageData[0].title === "E-commerce Logistics Solutions" && <EcommerceLogiticsSolutions />}
 
         {filterPageData[0].title === "Food delivery system" && <FoodDeliverySystem />}
+
+        {filterPageData[0].title === "Retail and FMCG" && <RetailAndFMCG />}
+
+        {filterPageData[0].title === "Courier & parcel" && <CourierAndParcel />}
 
         {/* contact us form section */}
         <DownlaodOurApp />
