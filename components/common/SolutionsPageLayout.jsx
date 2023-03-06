@@ -9,6 +9,7 @@ import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
 import RetailAndFMCG from '../SolutionsPages/RetailAndFMCG';
 import CourierAndParcel from '../SolutionsPages/CourierAndParcel';
 import LogisticsManagement from '../SolutionsPages/LogisticsManagement';
+import IndustryDataAnalysis from '../SolutionsPages/IndustryDataAnalysis';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -39,6 +40,8 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {filterPageData[0].title === "Courier & parcel" && <CourierAndParcel />}
 
         {filterPageData[0].title === "Logistics Management" && <LogisticsManagement />}
+        
+        {filterPageData[0].title === "Industry data analysis" && <IndustryDataAnalysis />}
 
         {/* contact us form section */}
         <DownlaodOurApp />
