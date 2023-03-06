@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import { FreeMode, Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Slide from './Slide';
 
-const GoSlider = ({ data }) => {
+const GoPayraSlider = ({ data }) => {
 
   return (
     <div>
@@ -37,4 +37,4 @@ const GoSlider = ({ data }) => {
   );
 };
 
-export default GoSlider;
+export default GoPayraSlider;

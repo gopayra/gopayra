@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Container from '../common/Container';
 import GridLayout from '../common/GridLayout';
-import SupplyVisibility from '../../assets/images/bg-2.png';
+import SupplyVisibility from '../../assets/images/solutionsPages/supplyChainVisibility.webp';
 import OrderManagement from '../../assets/images/solutionsPages/orderManagement.svg'
 import ProductManagement from '../../assets/images/solutionsPages/productManagement.svg'
 import LogisticsVisibility from '../../assets/images/solutionsPages/logisticsVisibility.svg'
@@ -13,52 +13,33 @@ import supplyImage2 from '../../assets/images/solutionsPages/supplyImage2.webp'
 import ShowCase from '../../assets/images/showcase1.png';
 import HeadingText from '../UI/HeadingText';
 import SubHeadingText from '../UI/SubHeadingText';
+import ThreeFeatureCards from '../common/ThreeFeatureCards';
 
 const SupplyChainManagement = () => {
-  const styles = {
-    div: 'w-[370px] h-[196px] border border-[#CDE2DF] rounded-3xl flex justify-center items-center',
-    h3: 'text-2xl font-semibold whitespace-nowrap mt-4'
-  }
+  const cardData = [
+    {
+      icon: OrderManagement,
+      text: 'Order Management'
+    }, {
+      icon: ProductManagement,
+      text: 'Product Management'
+    }, {
+      icon: LogisticsVisibility,
+      text: 'Logistics Visibility'
+    }]
   return (
     <>
-      <div className='flex justify-center my-20'>
+      <div className='flex justify-center my-20' data-aos="zoom-in">
         <Image src={ShowCase} alt="" width={638} height={432} />
       </div>
       <GridLayout
         heading="How Supply Chain Visibility Works"
-        description="A Better Way to Manage Your Supply Chain
-      Access your supply chain data, reconcile invoices and identify gaps in real time to scale your business."
-        thumbnail={SupplyVisibility}>
-      </GridLayout>
-
+        description="A Better Way to Manage Your Supply Chain. Access your supply chain data, reconcile invoices and identify gaps in real time to scale your business."
+        thumbnail={SupplyVisibility}
+      />
 
       {/* How supply chain works */}
-      <section>
-        <Container>
-          <div className='flex gap-4 justify-center mt-20 items-center flex-wrap md:flex-nowrap md:justify-between'>
-            <div className={styles.div}>
-              <div className='text-center'>
-                <Image src={OrderManagement} alt="" />
-                <h3 className={styles.h3}>Order Management</h3>
-              </div>
-            </div>
-
-            <div className={styles.div}>
-              <div className='text-center'>
-                <Image src={ProductManagement} alt="" />
-                <h3 className={styles.h3}>Production Management</h3>
-              </div>
-            </div>
-
-            <div className={styles.div}>
-              <div className='text-center'>
-                <Image src={LogisticsVisibility} alt="" />
-                <h3 className={styles.h3}>Logistics Visibility</h3>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <ThreeFeatureCards cardData={cardData} fontSize="2xl" />
 
       {/* Core Capabilities Of Gopayra */}
       <section>
@@ -78,38 +59,36 @@ const SupplyChainManagement = () => {
         </Container>
       </section>
 
-      <section className='bg-[#F6F9FC]'>
+      <section className='bg-[#F6F9FC] my-20'>
         <Container>
           <div className='flex gap-8 my-24 items-center justify-center flex-wrap md:flex-nowrap'>
-            <div className='text-center'>
+            <div className='text-center' data-aos="fade-right">
               <Image src={API} alt="" />
-              <h3 className="text-2xl font-semibold">API-first, delivering data to your teams, systems, and customers</h3>
+              <h3 className="text-2xl font-semibold mt-6">API-first, delivering data to your teams, systems, and customers</h3>
             </div>
 
-            <div className='text-center'>
+            <div className='text-center' data-aos="zoom-in">
               <Image src={Cloud} alt="" />
-              <h3 className="text-2xl font-semibold">Cloud-based data storing and cleaning unnecessary data</h3>
+              <h3 className="text-2xl font-semibold mt-6">Cloud-based data storing and cleaning unnecessary data</h3>
             </div>
 
-            <div className='text-center'>
+            <div className='text-center' data-aos="fade-left">
               <Image src={TrustedData} alt="" />
-              <h3 className="text-2xl font-semibold">The trusted data you need & predictive analytics you want</h3>
+              <h3 className="text-2xl font-semibold mt-6">The trusted data you need & predictive analytics you want</h3>
             </div>
           </div>
         </Container>
       </section>
 
-      <section>
-        <Container>
-          <HeadingText text='Supply Chain Management' />
-          <SubHeadingText text='We help shippers, carriers and logistics service providers to gain supply chain visibility.' />
-          <GridLayout
-            description="Manage your supply chain with precision and efficiency, especially in the face of disruptions. Improve inventory predictability, reduce excess fees like demurrage and detention, and exceed customer expectations."
-            thumbnail={supplyImage2}
-            leftImage={true}
-          />
-        </Container>
-      </section>
+      <Container>
+        <HeadingText text='Supply Chain Management' />
+        <SubHeadingText text='We help shippers, carriers and logistics service providers to gain supply chain visibility.' />
+      </Container>
+      <GridLayout
+        description="Manage your supply chain with precision and efficiency, especially in the face of disruptions. Improve inventory predictability, reduce excess fees like demurrage and detention, and exceed customer expectations."
+        thumbnail={supplyImage2}
+        leftImage={true}
+      />
     </>
   );
 };
