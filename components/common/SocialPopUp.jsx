@@ -10,7 +10,7 @@ const SocialPopUp = () => {
   const [showPopUP, setShowPopUP] = useState(false);
 
   const ChangeBackground = () => {
-    
+
     if (typeof window !== "undefined") {
       if (window.scrollY > 600) {
         setShowPopUP(true);
@@ -22,7 +22,6 @@ const SocialPopUp = () => {
 
   if (typeof window !== "undefined") {
     window.addEventListener('scroll', ChangeBackground)
-    console.log(window.scrollY)
   }
   return (
     <div className={`bg-gopayra fixed z-10 right-0 top-80 p-2 rounded-full ${showPopUP ? 'block' : 'hidden'}`}>
