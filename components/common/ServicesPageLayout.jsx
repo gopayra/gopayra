@@ -18,8 +18,6 @@ const ServicesPageLayout = ({ servicesData }) => {
   const { servicesName } = router.query;
   const filterPageData = servicesData.filter((item) => item.link === servicesName);
 
-  console.log(filterPageData[0].title)
-
   return (
     <>
       <Head>

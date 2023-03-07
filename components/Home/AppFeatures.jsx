@@ -10,6 +10,7 @@ import Schedule from '../../assets/images/features/schedule.svg';
 import ResendOrders from '../../assets/images/features/resend-orders.svg';
 import Address from '../../assets/images/features/address.svg';
 import Map from '../../public/bangladesh.png';
+import appMockup from '../../assets/images/appMockup.webp';
 
 const AppFeatures = () => {
   return (
@@ -36,7 +37,7 @@ Customers can view their orders on a map interface with real-time location of th
         </div>
 
         <div className='p-14 hidden md:block' data-aos="zoom-in">
-          <Image src={Map} alt="" width={477} height={553} />
+          <Image src={appMockup} alt="" />
         </div>
 
         <div className='flex flex-col gap-12' data-aos="fade-left">
