@@ -11,6 +11,7 @@ import CourierAndParcel from '../SolutionsPages/CourierAndParcel';
 import LogisticsManagement from '../SolutionsPages/LogisticsManagement';
 import IndustryDataAnalysis from '../SolutionsPages/IndustryDataAnalysis';
 import AllDeliverySystem from '../SolutionsPages/AllDeliverySystem';
+import FleetAndDriverManagement from '../SolutionsPages/FleetAndDriverManagement';
 
 
 const SolutionsPageLayout = ({ solutionData }) => {
@@ -45,6 +46,8 @@ const SolutionsPageLayout = ({ solutionData }) => {
         {filterPageData[0].title === "Industry data analysis" && <IndustryDataAnalysis />}
 
         {filterPageData[0].title === "All delivery system" && <AllDeliverySystem />}
+        
+        {filterPageData[0].title === "Fleet & Driver Management" && <FleetAndDriverManagement />}
 
         {/* contact us form section */}
         {filterPageData[0].title === "All delivery system" || filterPageData[0].title === 'Fleet & Driver Management' ? null : <DownlaodOurApp />}
