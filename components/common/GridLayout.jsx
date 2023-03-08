@@ -16,9 +16,10 @@ const GridLayout = ({ heading, description, thumbnail, leftImage }) => {
             {heading && <h1 className='text-heading font-semibold mb-8'>{heading}</h1>}
             <p className='text-goDesc'>{description}</p>
           </div>
-          {!leftImage && <div>
+          {!leftImage && <div className='flex justify-end'>
             <Image src={thumbnail} alt="" data-aos="fade-left"/>
           </div>}
+          
         </div>
       </Container>
     </section>

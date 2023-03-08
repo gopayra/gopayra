@@ -1,5 +1,10 @@
 import Head from "next/head";
+import MainSection from "../../components/AboutUs/MainSection";
 import CommingSoon from "../../components/common/CommingSoon";
+import HeroSectionCommon from "../../components/common/HeroSectionCommon";
+import AboutUs from "../../assets/images/aboutusPage/aboutUS.webp";
+import OurTeamSection from "../../components/AboutUs/OurTeamSection";
+import DownlaodOurApp from "../../components/common/DownlaodOurApp";
 
 export default function index() {
   return (
@@ -11,7 +16,16 @@ export default function index() {
       </Head>
 
       <main>
-        <CommingSoon text="About us"/>
+        <HeroSectionCommon 
+        title="About us"
+        description="Gopayra has brought the aim of industrial revolution in Bangladesh with new technology in this new era of logistics department."
+        Thumbnail={AboutUs}
+        downloadButton
+        />
+        <MainSection />
+        <OurTeamSection />
+
+        <DownlaodOurApp />
       </main>
     </>
   );
