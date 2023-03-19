@@ -14,7 +14,7 @@ const servicesData = [{
   link: "rent-by-day"
 }, {
   Thumbnail: rentByTrip,
-  title: "Rent by Trip",
+  title: "Rent by trip",
   description: 'Choose which transport you need to hire from the Gopayra fleet. Find it now! Choose from the transport that Gopayara offers. Read our reviews, secure booking. Get instant confirmation. 24/7 customer service is available for one and a half of our customers.',
   link: "rent-by-trip"
 }, {
