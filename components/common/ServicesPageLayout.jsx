@@ -1,17 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import Container from './Container';
 import DownlaodOurApp from './DownlaodOurApp';
 import Thumbnail from '../../assets/images/supplyChain.png';
-import ShowCase from '../../assets/images/showcase1.png';
 import HeroSectionCommon from './HeroSectionCommon';
-import HowItWorks from './HowItWorks';
 import HowItWorksVideo from './HowItWorksVideo';
 import MissionAndVision from './MissionAndVision';
 import OurTransport from './OurTransport';
+import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
+import VehiclesCategory from './VehiclesCategory';
 
 const ServicesPageLayout = ({ servicesData }) => {
   const router = useRouter();
@@ -21,21 +18,30 @@ const ServicesPageLayout = ({ servicesData }) => {
   return (
     <>
       <Head>
-        <title>GOPAYRA - Solutions Pages</title>
+        <title>GOPAYRA - Services Pages</title>
         <meta name="description" content="Go Payra Easy Solution" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         {/* hero section */}
-        <HeroSectionCommon title={filterPageData[0].title} description={filterPageData[0].description} Thumbnail={Thumbnail} />
+        <HeroSectionCommon
+          title={filterPageData[0].title}
+          description={filterPageData[0].description}
+          Thumbnail={filterPageData[0].Thumbnail}
+          downloadButton
+        />
 
-        <OurTransport />
-        
-        <HowItWorksVideo />
+        {/* <FoodDeliverySystem /> */}
+        <VehiclesCategory />
 
-        <MissionAndVision />
+        {filterPageData[0].title === 'Gopayra Food Delivery'
+          ? null
+          : <>
+            <MissionAndVision />
 
+            <HowItWorksVideo />
+          </>}
         {/* contact us form section */}
         <DownlaodOurApp />
       </main>
