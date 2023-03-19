@@ -9,6 +9,9 @@ import MissionAndVision from './MissionAndVision';
 import OurTransport from './OurTransport';
 import FoodDeliverySystem from '../SolutionsPages/FoodDeliverySystem';
 import VehiclesCategory from './VehiclesCategory';
+import MoveMyHome from '../ServicesPages/MoveMyHome';
+import OfficeAndCommercialMove from '../ServicesPages/OfficeAndCommercialMove';
+import CourierAndParcel from '../ServicesPages/CourierAndParcel';
 
 const ServicesPageLayout = ({ servicesData }) => {
   const router = useRouter();
@@ -32,16 +35,22 @@ const ServicesPageLayout = ({ servicesData }) => {
           downloadButton
         />
 
-        {/* <FoodDeliverySystem /> */}
-        <VehiclesCategory />
+        {filterPageData[0].title === 'Office & commercial move' && <OfficeAndCommercialMove />}
+        {filterPageData[0].title === 'Rent by day' && <VehiclesCategory />}
+        {filterPageData[0].title === 'Rent by trip' && <VehiclesCategory />}
+
+        {filterPageData[0].title === 'Move my home' && <MoveMyHome />}
+
+        {filterPageData[0].title === 'Courier & Parcel' && <CourierAndParcel />}
+
 
         {filterPageData[0].title === 'Gopayra Food Delivery'
-          ? null
+          ? <FoodDeliverySystem />
           : <>
-            <MissionAndVision />
-
+            {filterPageData[0].title === 'Move my home' ? null : <MissionAndVision />}
             <HowItWorksVideo />
           </>}
+
         {/* contact us form section */}
         <DownlaodOurApp />
       </main>
