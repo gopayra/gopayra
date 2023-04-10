@@ -1,24 +1,26 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
-import Container from './Container';
-import HeadingText from '../UI/HeadingText';
-import SubHeadingText from '../UI/SubHeadingText';
-import Thumbnail from '../../assets/images/video-thumbnail.jpg';
+import Image from "next/image";
+import React, { useState } from "react";
+import Container from "./Container";
+import HeadingText from "../UI/HeadingText";
+import SubHeadingText from "../UI/SubHeadingText";
+import Thumbnail from "../../assets/images/video-thumbnail.jpg";
 
 const HowItWorksVideo = () => {
   return (
-    <section className='mt-24'>
+    <section className="mt-24">
       <Container>
-        <div className='map-bg-right h-full pb-20'>
+        <div className="map-bg-right h-full pb-20">
           <HeadingText text="How it works" />
           <SubHeadingText text="Here is a video how we operate our system" />
 
-
-          <div className='flex justify-center items-center mt-10'>
-            <div className='flex max-w-[772px] h-[457px] overflow-hidden'>
-              <video id="my-video" className="rounded-3xl" preload="auto" poster="https://gopayra.com/_next/static/media/video-thumbnail.da698279.jpg" loop controls>
-                <source src="../../assets/images/how-it-works-video.mp4" type='video/mp4' />
-              </video>
+          <div className="flex justify-center items-center mt-10">
+            <div className="flex overflow-hidden">
+            <iframe
+              width="720"
+              height="720"
+              src="https://www.youtube.com/embed/Pk3wAOlJ9KI?controls=0&rel=0"
+              title="YouTube video player"
+            ></iframe>
             </div>
           </div>
         </div>
