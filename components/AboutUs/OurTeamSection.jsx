@@ -1,42 +1,56 @@
 import React from 'react';
 import HeadingText from '../UI/HeadingText';
-import people from '../../assets/images/aboutusPage/people.webp';
-import Image from 'next/image';
 import Container from '../common/Container';
+import Image from 'next/image';
+
+// team images import
+import people from '../../assets/images/aboutusPage/people.webp';
+import Shariful from '../../assets/images/aboutusPage/shariful-haque.webp';
+import Yakub from '../../assets/images/aboutusPage/yakub-bhuyan.webp';
+import Aminul from '../../assets/images/aboutusPage/aminul-islam.webp';
+import Enamul from '../../assets/images/aboutusPage/enamul-haque.webp';
+import Saima from '../../assets/images/aboutusPage/saima-rahman.webp';
+
+import Nayeem from '../../assets/images/aboutusPage/nayeem-islam.webp';
+import Redwan from '../../assets/images/aboutusPage/redwan-rizu.webp';
+import Jahid from '../../assets/images/aboutusPage/jahid-seizer.webp';
+import Tariqul from '../../assets/images/aboutusPage/tariqul-islam.webp';
+import Shahadin from '../../assets/images/aboutusPage/Shahadin.webp';
+import Tanzim from '../../assets/images/aboutusPage/Tanzim.webp';
 
 const OurTeamSection = () => {
   const higherManagementData = [{
-    dp: people,
+    dp: Yakub,
     fullName: 'Yakub Bhuyan',
     title: 'Chairman'
   }, {
-    dp: people,
+    dp: Aminul,
     fullName: 'Dr.Aminul islam Juyel',
     title: 'Vice chairman'
   }, {
-    dp: people,
+    dp: Shariful,
     fullName: 'Md.Shariful Haque',
     title: 'Managing Director & CEO'
   }, {
-    dp: people,
+    dp: Enamul,
     fullName: 'Eng. Enamul Haque',
     title: 'Director Operation'
   }, {
-    dp: people,
+    dp: Saima,
     fullName: 'Dr.Saima Rahman',
     title: 'Director'
   },]
 
   const advisorPanel = [{
-    dp: people,
+    dp: Nayeem,
     fullName: 'Nayeem Islam',
     title: 'Legal advisor'
   }, {
-    dp: people,
+    dp: Redwan,
     fullName: 'Redwan Rizu',
     title: 'Legal advisor'
   }, {
-    dp: people,
+    dp: Jahid,
     fullName: 'Jahid seizer',
     title: 'Legal advisor'
   }]
@@ -46,15 +60,15 @@ const OurTeamSection = () => {
     fullName: 'Shariful Pradhan Hridoy',
     title: 'Chief Technical Officer'
   }, {
-    dp: people,
+    dp: Tariqul,
     fullName: 'Tariqul islam',
     title: 'Accounting officer'
   }, {
-    dp: people,
+    dp: Shahadin,
     fullName: 'Shahadin Mahmud',
     title: 'UI and UX engineer'
   }, {
-    dp: people,
+    dp: Tanzim,
     fullName: 'Tanzim Bin Yunus',
     title: 'Senior Marketing officer'
   }]
@@ -65,7 +79,7 @@ const OurTeamSection = () => {
 
         {/* team card */}
         <div className='text-center mt-16'>
-          <Image src={people} alt="" />
+          <Image src={Shariful} alt="" width={270} height={299}/>
           {/* full name */}
           <h2 className='text-2xl font-semibold mt-6 mb-4'>Md. Shariful Haque</h2>
           {/* title */}
@@ -81,7 +95,7 @@ const OurTeamSection = () => {
           <div className='flex flex-wrap justify-center gap-4'>
             {higherManagementData.map((item, index) => {
               return <div className='text-center mt-16' key={index}>
-              <Image src={item.dp} alt="" />
+              <Image src={item.dp} alt="" width={270} height={299}/>
               {/* full name */}
               <h2 className='text-2xl font-semibold mt-6 mb-4'>{item.fullName}</h2>
               {/* title */}
@@ -100,7 +114,7 @@ const OurTeamSection = () => {
           <div className='flex flex-wrap justify-center gap-4'>
             {advisorPanel.map((item, index) => {
               return <div className='text-center mt-16' key={index}>
-              <Image src={item.dp} alt="" />
+              <Image src={item.dp} alt="" width={270} height={299}/>
               {/* full name */}
               <h2 className='text-2xl font-semibold mt-6 mb-4'>{item.fullName}</h2>
               {/* title */}
@@ -119,7 +133,7 @@ const OurTeamSection = () => {
           <div className='flex flex-wrap justify-center gap-4'>
             {operationTeamData.map((item, index) => {
               return <div className='text-center mt-16' key={index}>
-              <Image src={item.dp} alt="" />
+              <Image src={item.dp} alt="" width={270} height={299}/>
               {/* full name */}
               <h2 className='text-2xl font-semibold mt-6 mb-4'>{item.fullName}</h2>
               {/* title */}
