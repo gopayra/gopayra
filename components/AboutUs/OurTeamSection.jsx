@@ -16,7 +16,7 @@ import Redwan from '../../assets/images/aboutusPage/redwan-rizu.webp';
 import Jahid from '../../assets/images/aboutusPage/jahid-seizer.webp';
 import Tariqul from '../../assets/images/aboutusPage/tariqul-islam.webp';
 import Shahadin from '../../assets/images/aboutusPage/Shahadin.webp';
-import Tanzim from '../../assets/images/aboutusPage/Tanzim.webp';
+import Munna from '../../assets/images/aboutusPage/munna.webp';
 
 const OurTeamSection = () => {
   const higherManagementData = [{
@@ -68,9 +68,9 @@ const OurTeamSection = () => {
     fullName: 'Shahadin Mahmud',
     title: 'UI and UX engineer'
   }, {
-    dp: Tanzim,
-    fullName: 'Tanzim Bin Yunus',
-    title: 'Senior Marketing officer'
+    dp: Munna,
+    fullName: 'Munna',
+    title: 'Office executive'
   }]
   return (
     <>
