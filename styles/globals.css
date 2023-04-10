@@ -40,7 +40,7 @@ a {
 }
 
 .map-bg-white {
-  background-image: url('https://gopayra.com/_next/static/media/bangladeshLite.4b132597.webp');
+  background-image: url('../assets/images/white-map-bg.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
