@@ -14,9 +14,11 @@ import Saima from '../../assets/images/aboutusPage/saima-rahman.webp';
 import Nayeem from '../../assets/images/aboutusPage/nayeem-islam.webp';
 import Redwan from '../../assets/images/aboutusPage/redwan-rizu.webp';
 import Jahid from '../../assets/images/aboutusPage/jahid-seizer.webp';
+
+import Pradhan from '../../assets/images/aboutusPage/shariful-pradhan-hridoy.webp';
 import Tariqul from '../../assets/images/aboutusPage/tariqul-islam.webp';
-import Shahadin from '../../assets/images/aboutusPage/Shahadin.webp';
 import Munna from '../../assets/images/aboutusPage/munna.webp';
+import Shahadin from '../../assets/images/aboutusPage/shahadin.webp';
 
 const OurTeamSection = () => {
   const higherManagementData = [{
@@ -56,7 +58,7 @@ const OurTeamSection = () => {
   }]
 
   const operationTeamData = [{
-    dp: people,
+    dp: Pradhan,
     fullName: 'Shariful Pradhan Hridoy',
     title: 'Chief Technical Officer'
   }, {
