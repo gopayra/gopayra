@@ -4,7 +4,6 @@ import Container from '../common/Container';
 import Image from 'next/image';
 
 // team images import
-import people from '../../assets/images/aboutusPage/people.webp';
 import Shariful from '../../assets/images/aboutusPage/shariful-haque.webp';
 import Yakub from '../../assets/images/aboutusPage/yakub-bhuyan.webp';
 import Aminul from '../../assets/images/aboutusPage/aminul-islam.webp';
@@ -18,7 +17,7 @@ import Jahid from '../../assets/images/aboutusPage/jahid-seizer.webp';
 import Pradhan from '../../assets/images/aboutusPage/shariful-pradhan-hridoy.webp';
 import Tariqul from '../../assets/images/aboutusPage/tariqul-islam.webp';
 import Munna from '../../assets/images/aboutusPage/munna.webp';
-import Shahadin from '../../assets/images/aboutusPage/shahadin.webp';
+import Shahadin from '../../assets/images/aboutusPage/sahadindp.jpg';
 
 const OurTeamSection = () => {
   const higherManagementData = [{
