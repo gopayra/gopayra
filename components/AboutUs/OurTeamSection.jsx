@@ -79,14 +79,12 @@ const OurTeamSection = () => {
       <section className='mt-32'>
         <HeadingText text='Our Team' />
 
-        {/* team card */}
-        <div className='text-center mt-16'>
+        {/* founder card */}
+        {/* <div className='text-center mt-16'>
           <Image src={Shariful} alt="" width={270} height={299}/>
-          {/* full name */}
           <h2 className='text-2xl font-semibold mt-6 mb-4'>Md. Shariful Haque</h2>
-          {/* title */}
           <p className='text-goDesc'>Founder</p>
-        </div>
+        </div> */}
       </section>
 
       {/* higher management section */}
