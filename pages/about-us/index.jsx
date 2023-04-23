@@ -1,6 +1,5 @@
 import Head from "next/head";
 import MainSection from "../../components/AboutUs/MainSection";
-import CommingSoon from "../../components/common/CommingSoon";
 import HeroSectionCommon from "../../components/common/HeroSectionCommon";
 import AboutUs from "../../assets/images/aboutusPage/aboutUS.webp";
 import OurTeamSection from "../../components/AboutUs/OurTeamSection";
