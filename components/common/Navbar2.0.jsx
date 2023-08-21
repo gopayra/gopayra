@@ -83,18 +83,18 @@ const Navbar = () => {
       link: '/',
       text: 'Home'
     }, {
-      link: '/solutions',
+      link: '#solutions',
       text: 'Solutions',
       subLinks: solutionData
     }, {
       link: '/about-us',
       text: 'About us'
     }, {
-      link: '/services',
+      link: '#services',
       text: 'Services',
       subLinks: ourServices
     }, {
-      link: '/join-with-us',
+      link: '#join-with-us',
       text: 'Join with us',
       subLinks: [{
         title: "Become a partner",
@@ -128,7 +128,7 @@ const Navbar = () => {
           </div>
 
 
-          <WhiteButton text="Track Order" url="track-order" />
+          <WhiteButton text="Track Order" url="track-your-order" />
 
           <div className='md:hidden block transition-all hover:scale-90 active:scale-105 cursor-pointer'>
             <Image src={Hamburger} alt="" onClick={() => setMobileNav(true)} />

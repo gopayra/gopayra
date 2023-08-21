@@ -16,7 +16,7 @@ const AppButton = ({ appLink, playLink }) => {
         </button>
       </a>
 
-      <a href={appLink} target="_blank" rel="noreferrer">
+      {/* <a href={appLink} target="_blank" rel="noreferrer">
         <button className='bg-black text-white flex items-center text-left gap-4 py-2 px-4 rounded-xl hover:translate-x-3 transition-all'>
           <Image src={AppStore} alt="appIcon" width={32} height={32}/>
           <div>
@@ -24,7 +24,7 @@ const AppButton = ({ appLink, playLink }) => {
             <p className='font-semibold text-lg'>App Store</p>
           </div>
         </button>
-      </a>
+      </a> */}
     </div>
   );
 };

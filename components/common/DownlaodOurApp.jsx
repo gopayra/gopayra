@@ -9,16 +9,17 @@ const DownlaodOurApp = () => {
     {
       typeOfApps: "User apps",
       appLink: "http://apple.com",
-      playLink: "http://google.com"
+      playLink: "https://play.google.com/store/apps/details?id=com.gopayra.customer"
     }, {
       typeOfApps: "Driver apps",
       appLink: "http://apple.com",
-      playLink: "http://google.com"
-    }, {
-      typeOfApps: "Partners apps",
-      appLink: "http://apple.com",
-      playLink: "http://google.com"
-    }
+      playLink: "https://play.google.com/store/apps/details?id=com.gopayra.driver"
+    }, 
+    // {
+    //   typeOfApps: "Partners apps",
+    //   appLink: "http://apple.com",
+    //   playLink: "http://google.com"
+    // }
   ]
   return (
     <section className='mt-10 bg-slate-100 shadow-lg' id="download">
