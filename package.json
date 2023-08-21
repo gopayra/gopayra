@@ -10,6 +10,7 @@
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@iconscout/react-unicons": "^1.1.6",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.8",
