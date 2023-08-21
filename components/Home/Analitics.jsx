@@ -11,22 +11,22 @@ import CountUp from 'react-countup';
 const Analitics = () => {
   const AnaliticsData = [{
     icon: AvatarwithStarIcon,
-    numbers: 8100,
+    numbers: 150,
     type: 'Happy Client',
-    duration: 15
+    duration: 20
   }, {
     icon: BookingIcon,
-    numbers: 1500,
+    numbers: 1000,
     type: 'Booking',
     duration: 30
   }, {
     icon: TruckIcon,
-    numbers: 500,
+    numbers: 200,
     type: 'Trucks',
     duration: 50
   }, {
     icon: DriversIcon,
-    numbers: 1000,
+    numbers: 225,
     type: 'Drivers',
     duration: 60
   }]

@@ -63,7 +63,7 @@ const OurSolution = () => {
     link: "/fleet-and-driver-management"
   }]
   return (
-    <section className='py-16 bg-liteGray'>
+    <section className='py-16 bg-liteGray' id="solutions">
       <Container>
         <HeadingText text="Our Solution"></HeadingText>
         <SubHeadingText text="From supply chain to Industry data analysis we are here to solve every problem with our expertise"></SubHeadingText>

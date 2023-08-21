@@ -5,27 +5,35 @@ import HeadingText from '../UI/HeadingText';
 import SubHeadingText from '../UI/SubHeadingText';
 
 const OurBlog = () => {
-  const cardData = [{
-    title: "The Sense of Community",
-    description: "We believe in honesty Performance. We value any technology. Our innovations are human-centric, meaningful.",
-    link: "/blog",
-    animation: "fade-right"
-  }, {
-    title: "Gopayra's largest digital freight forwarder platform for your on-road logistics.",
-    description: "Each day, thousands of shippers and carriers optimise and cut costs, increase loads, reduce empty miles, and enjoy improved income.",
-    link: "/blog",
-    animation: "zoom-in"
-  }, {
-    title: "3.The best possible transport allocation.",
-    description: "Instant pricing. Live track-and-trace. Real-time analytics.",
-    link: "/blog",
-    animation: "fade-left"
-  },]
+  const cardData = [
+    {
+      title: "Gopayra Supply Chain Logistics!",
+      description:
+        "If you're reading this, you're probably already familiar with the concept of supply chain logistics and its importance in today's global economy.....",
+      link: "/blog/gopayra-supply-chain-logistics",
+      animation: "fade-right",
+    },
+    {
+      title: "All in one Delivery service.",
+      description:
+        "It's no secret that delivery services are becoming more and more popular for both businesses and consumers. Whether it's delivering services like grocery delivery,...",
+      link: "/blog/all-in-one-delivery-service",
+      animation: "zoom-in",
+    },
+    {
+      title:
+        "Gopayra is the largest digital freight forwarder.....",
+      description:
+        "Logistics can be a daunting task, but it doesn't have to be. With the right digital freight forwarder platform, you can make your on-road logistics process easier and more efficient....",
+      link: "/blog/gopayra-on-road-logistics",
+      animation: "fade-left",
+    }
+  ];
   return (
     <section className='mt-24'>
       <Container>
         <HeadingText text="Our Blog" />
-        <SubHeadingText text="A Future-Proof Supply Chain Is The Future." />
+        <SubHeadingText text="Read our blogs for stay up to date with GoPayra latest updates" />
 
         <div className='flex gap-4 justify-center flex-wrap lg:flex-nowrap my-10'>
           {
